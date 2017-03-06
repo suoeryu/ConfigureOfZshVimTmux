@@ -1,0 +1,43 @@
+priority 0
+
+snippet em
+_$1_$0
+endsnippet
+
+snippet -- "Split"
+---------------
+${0}
+endsnippet
+
+snippet lk "link"
+[[${1:link}|${2:name}]]${0}
+endsnippet
+
+snippet cb "Code Block"
+{{{class="${1:language}"
+$0
+}}}
+endsnippet
+
+snippet fm "Formula"
+\{\{\$
+\begin\{align\}
+$1
+\end\{align\}
+\}\}\$
+$0
+endsnippet
+
+snippet os "\overset{}{}"
+\overset\{${1:over}\}\{$2\}$0
+endsnippet
+
+snippet us "\overset{}{}"
+\underset\{${1:under}\}\{$2\}$0
+endsnippet
+
+snippet env "Array"
+\begin\{${1:array}\}{$2}
+$0
+\end\{$1\}
+endsnippet

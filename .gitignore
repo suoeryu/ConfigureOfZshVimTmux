@@ -1,0 +1,10 @@
+Session.vim
+tmp/
+
+Github/
+
+Vimdir/bundle
+
+tmuxdir/plugins
+tmuxdir/resurrect
+tmuxdir/sidebar

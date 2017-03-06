@@ -1,0 +1,252 @@
+priority 0
+
+snippet skeleton "Skelton of Latex" b
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+\documentclass[a4paper,12pt]{article}
+\usepackage[top=1in, bottom=1in, left=1in, right=1in]{geometry}
+
+\usepackage[bookmarks=true, bookmarksnumbered=true, bookmarksopen=true,
+colorlinks, linkcolor=red, anchorcolor=blue, citecolor=green]{hyperref}
+
+\title{${1:TITLE}}
+\author{Eryu Suo}
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+
+${0}
+
+\end{document}
+endsnippet
+
+snippet standaloneskeleton "Skelton of Standalone" b
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+\documentclass[varwidth,preview,10pt]{standalone}
+
+\input{preamble.tex}
+\input{commands.tex}
+
+\begin{document}
+
+${0}
+
+\end{document}
+endsnippet
+
+snippet xecjkPreamble "Preamble of xeCJK" b
+\usepackage{fontspec}
+\usepackage{xeCJK}
+\setmainfont{Times New Roman}
+\setCJKmainfont[ItalicFont={Kaiti SC}, BoldFont={Songti SC Bold}]{Songti SC Light}
+\setCJKsansfont{Heiti SC}
+\setCJKmonofont{STFangsong}
+\setCJKfamilyfont{song}{Songti SC}
+\newcommand{\song}{\CJKfamily{song}}
+\setCJKfamilyfont{kai}{Kaiti SC}
+\newcommand{\kai}{\CJKfamily{kai}}
+\setCJKfamilyfont{hei}{Heiti SC}
+\newcommand{\hei}{\CJKfamily{hei}}
+${0}
+endsnippet
+
+snippet headAndFootPreamble "Preamble of Head and Foot" b
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\headheight 30pt
+\lhead{${1}}
+\chead{${2}}
+\rhead{${3:\thepage}}
+\lfoot{${4}}
+\cfoot{${5}}
+\rfoot{${6}}
+${0}
+endsnippet
+
+snippet em "\emph{}"
+\emph{$1}$0
+endsnippet
+
+# Enumerate
+
+snippet enum "Enumerate" b
+\begin{enumerate}[$1]
+	\item $0
+\end{enumerate}
+endsnippet
+
+snippet it "Individual item" b
+\item ${0}
+endsnippet
+
+snippet itd "Description item" b
+\item[${1}] ${0}
+endsnippet
+
+# Math
+
+snippet amsPreamble "Preamble of amsmath" b
+\usepackage[fleqn]{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+endsnippet
+
+# Listings
+
+snippet listingPreamlle "Preamble of Listing" b
+\usepackage{listings, color}
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\lstdefinestyle{default}{
+	frame=tb,
+	aboveskip=3mm,
+	belowskip=3mm,
+	showstringspaces=false,
+	columns=flexible,
+	basicstyle={\small\ttfamily},
+	numbers=none,
+	numberstyle=\tiny\color{gray},
+	keywordstyle=\color{blue},
+	commentstyle=\color{dkgreen},
+	stringstyle=\color{mauve},
+	breaklines=true,
+	breakatwhitespace=true,
+	tabsize=4,
+	language=${1}
+}
+\lstset{style=default}
+${0}
+endsnippet
+
+snippet lst "lstlisting" b
+\begin{lstlisting}[${1}]
+${0}
+\end{lstlisting}
+endsnippet
+
+snippet lsti "lstinline"
+\lstinline[${1}]!${2}!${0}
+endsnippet
+
+# Algorithm
+
+snippet algorithmPreamble "Preamble of Algorithm" b
+\usepackage{algorithm}
+\usepackage{algorithmicx}
+\usepackage{algpseudocode}
+endsnippet
+
+snippet alg "Algorithm" b
+\begin{algorithm}
+	\begin{algorithmic}
+		${0}
+	\end{algorithmic}
+\end{algorithm}
+endsnippet
+
+snippet algc "Algorithmic" b
+\begin{algorithmic}
+	${0}
+\end{algorithmic}
+endsnippet
+
+# Tikz
+
+snippet tikzPreamble "Preamble of TikZ" b
+\usepackage{tikz}
+${1:\usetikzlibrary{arrows}}
+${2:\usetikzlibrary{calc}}
+${3:\usetikzlibrary{datavisualization.formats.functions}}
+$0
+endsnippet
+
+snippet node "Tikz Node"
+\node (${1}) [${2}] {${3:${1///ga}}}$0;
+endsnippet
+
+snippet draw "Tikz draw"
+\draw[$1] $2;$0
+endsnippet
+
+snippet mindmap "Tikz Mind Map" b
+\begin{tikzpicture}
+    \begin{scope}[mindmap,concept color=black,text=white,
+        every node/.style={concept,circular drop shadow},
+        root/.style={font=\normalsize\bf,text width=7.7em,circular drop shadow},
+        level 1/.append style={font=\small\bf,sibling angle=40},
+        level 2/.append style={font=\footnotesize\bf,level distance=3cm,sibling angle=40},
+        level 3/.append style={font=\scriptsize\bf,level distance=2cm,sibling angle=40},
+        level 4/.append style={font=\tiny\bf,level distance=1cm,sibling angle=40}]
+        \node[root] {$0};
+    \end{scope}
+    \begin{scope}[
+        every annotation/.style = {draw,fill=white,font=\normalsize,text=black,drop shadow}]
+    \end{scope}
+\end{tikzpicture}
+endsnippet
+
+snippet ch "Tikz Mind Map Child"
+child[${1}]{
+	node (${2}) [${3}]{${4:${2///ga}}}
+}$0
+endsnippet
+
+snippet chp "Tikz Mind Map Child Plain"
+child[${1}]{node(${2})[${3}]{${4:${2///ga}}}}$0
+endsnippet
+
+snippet chn "Tikz Mind Map Child Plain"
+child{node{${1}}}$0
+endsnippet
+
+snippet info "Tikz Mind Map Information" b
+\info[${4:16}]{${1}}{anchor=${2}}{
+\item ${3}
+}$0
+endsnippet
+
+# Others
+
+snippet cpsc240_keymap4 "4 Key-map" b
+\begin{tikzpicture}[node distance=2em,
+    block/.style={very thin,rounded corners=1ex}]
+    \foreach \n/\x/\y in {
+        0/0/0,   1/1/0,   3/2/0,   2/3/0,
+        4/0/-1,  5/1/-1,  7/2/-1,  6/3/-1,
+        12/0/-2, 13/1/-2, 15/2/-2, 14/3/-2,
+        8/0/-3,  9/1/-3,  11/2/-3, 10/3/-3
+    }{
+        \coordinate (\n) at (\x*2em,\y*2em);
+        %\node[xshift=-0.8em,yshift=0.8em] at (\n) {\tiny \color{blue} \n};
+        \node[draw,minimum width=2em,minimum height=2em] at (\n) {};
+    }
+    \draw (-1em,-3em) -- +(-2em,0) (3em,1em) -- +(0,2em);
+    \draw (7em,-1em) -- +(2em,0) (7em,-5em) -- +(2em,0);
+    \draw (1em,-7em) -- +(0,-2em) (5em,-7em) -- + (0,-2em);
+    \node[left of=4,yshift=1em] {\Large $\overline{${1}}$};
+    \node[left of=8,yshift=1em] {\Large $$1$};
+    \node[right of=2] {\Large $\overline{${2}}$};
+    \node[right of=10] {\Large $\overline{$2}$};
+    \node[right of=6,yshift=-1em] {\Large $$2$};
+    \node[above of=0,xshift=1em] {\Large $\overline{${3}}$};
+    \node[above of=3,xshift=1em] {\Large $$3$};
+    \node[below of=8] {\Large $\overline{${4}}$};
+    \node[below of=10] {\Large $\overline{$4}$};
+    \node[below of=9,xshift=1em] {\Large $$4$};
+    \foreach \i in {${5}}{
+        \node at (\i) {\Large 1};
+    }
+    \foreach \i in {${6}}{
+        \node at (\i) {\Large d};
+    }
+    ${0}%\draw[block] ($(4)+(-0.6em,0.6em)$) rectangle ($(14)+(0.6em,-0.6em)$);
+    %\draw[block] ($(0)+(-1em,0.8em)$)--($(0)+(0.8em,0.8em)$) |- ($(8)+(-1em,-0.8em)$);
+    %\draw[block] ($(2)+(1em,0.8em)$)--($(2)+(-0.8em,0.8em)$) |- ($(10)+(1em,-0.8em)$);
+\end{tikzpicture} \\
+endsnippet
