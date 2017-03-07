@@ -42,7 +42,6 @@ Plugin 'honza/vim-snippets'
 
 Plugin 'tpope/vim-fugitive'
 
-Plugin 'vimwiki/vimwiki'
 "Plugin 'vim-latex/vim-latex'
 Plugin 'LaTeX-Box-Team/LaTeX-Box'
 
@@ -162,7 +161,7 @@ set colorcolumn=81
 
 set encoding=utf-8
 set fileencoding=utf-8
-set fileencodings=utf-8,chinese,gb18030,latin1
+set fileencodings=utf-8,utf-16,chinese,gb18030,latin1
 
 set fileformat=unix     " file mode is unix
 set fileformats=unix,dos,mac   " detects unix, dos, mac file formats in that order
@@ -440,30 +439,6 @@ let g:UltiSnipsExpandTrigger       = "<C-j>"
 let g:UltiSnipsListSnippets        = "<C-u>"
 let g:UltiSnipsJumpForwardTrigger  = "<C-j>"
 let g:UltiSnipsJumpBackwardTrigger = "<C-k>"
-" }}}
-
-" VimWiki settings {{{
-augroup filetype_wiki
-    autocmd!
-    "autocmd Filetype vimwiki setlocal foldmethod=syntax
-    "autocmd BufWritePre vimwiki setlocal foldmethod=syntax
-    autocmd BufNewFile *.wiki execute "normal! i= " . split(expand("%:t"),'\.')[0] . " =\<esc>"
-augroup END
-
-let g:vimwiki_camel_case = 0
-let g:vimwiki_hl_cb_checked = 1
-let g:vimwiki_CJK_length = 1
-let g:vimwiki_folding = 'expr'
-let g:vimwiki_html_header_numbering = 2
-
-let wiki_path = '~/Documents/Vimwiki/'
-
-let wiki_home = {}
-let wiki_home.path = wiki_path . 'Home'
-let wiki_home.syntax = 'markdown'
-let wiki_home.ext = '.mkd'
-
-let g:vimwiki_list = [wiki_home]
 " }}}
 
 " Latex Box settings {{{
