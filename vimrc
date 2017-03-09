@@ -115,6 +115,10 @@ else
     endif
 endif
 
+if has("gui_macvim")
+    set transparency=5
+endif
+
 set scrolloff=2         " 2 lines above/below cursor when scrolling
 set showmatch           " show matching bracket (briefly jump)
 set matchtime=2         " reduces matching paren blink time from the 5[00]ms def
@@ -225,31 +229,30 @@ nnoremap <silent> ]Q :clast<CR>
 " be turned off when necessary (for instance, when we want to input special
 " characters) with :set nomacmeta.
 if has("gui_macvim")
-    set transparency=5
     set macmeta
+    set winaltkeys=no       " turns of the Alt key bindings to the gui menu
+    noremap <silent><m-1> :tabn 1<cr>
+    noremap <silent><m-2> :tabn 2<cr>
+    noremap <silent><m-3> :tabn 3<cr>
+    noremap <silent><m-4> :tabn 4<cr>
+    noremap <silent><m-5> :tabn 5<cr>
+    noremap <silent><m-6> :tabn 6<cr>
+    noremap <silent><m-7> :tabn 7<cr>
+    noremap <silent><m-8> :tabn 8<cr>
+    noremap <silent><m-9> :tabn 9<cr>
+    noremap <silent><m-0> :tabn 10<cr>
 endif
 
-set winaltkeys=no       " turns of the Alt key bindings to the gui menu
-noremap <silent><m-1> :tabn 1<cr>
-noremap <silent><m-2> :tabn 2<cr>
-noremap <silent><m-3> :tabn 3<cr>
-noremap <silent><m-4> :tabn 4<cr>
-noremap <silent><m-5> :tabn 5<cr>
-noremap <silent><m-6> :tabn 6<cr>
-noremap <silent><m-7> :tabn 7<cr>
-noremap <silent><m-8> :tabn 8<cr>
-noremap <silent><m-9> :tabn 9<cr>
-noremap <silent><m-0> :tabn 10<cr>
 " }}}
 
 " TEMPLATES SETTINGS{{{
 augroup eryu_templates
     autocmd!
-    autocmd BufNewFile makefile     0r ~/.vim/templates/tlp.makefile
+    " autocmd BufNewFile makefile     0r ~/.vim/templates/tlp.makefile
     autocmd BufNewFile *.cpp        0r ~/.vim/templates/tlp.cpp
     autocmd BufNewFile *.h          0r ~/.vim/templates/tlp.h
     autocmd BufNewFile *.py         0r ~/.vim/templates/tlp.py
-    autocmd BufNewFile *.tex        0r ~/.vim/templates/tlp.tex
+    " autocmd BufNewFile *.tex        0r ~/.vim/templates/tlp.tex
     autocmd BufNewFile preamble.tex 0r ~/.vim/templates/preamble.tex
     autocmd BufNewFile commands.tex 0r ~/.vim/templates/commands.tex
 augroup END
@@ -267,17 +270,21 @@ augroup eryu_foldmethod
 augroup END
 " }}}
 
-" AUTOCOMMAND SETTINGS {{{
-augroup General
+" FILETYPE SETTING {{{
+augroup filetype_settings
+    autocmd!
+    autocmd BufNewFile,BufReadPost *.md set filetype=markdown
+    autocmd BufNewFile,BufReadPost *.mkd set filetype=markdown
+augroup END
+" }}}
+
+" PRE/POST PROCESS SETTINGS {{{
+augroup prepostprocess
     autocmd!
     " autocmd CompleteDone * pclose
     " Automatically delete trailing DOS-returns and whitespace on file open and
     " write.
     autocmd BufRead,BufWritePre,FileWritePre * silent! %s/[\r \t]\+$//
-augroup END
-augroup filetype_markdown
-    autocmd!
-    autocmd BufNewFile,BufReadPost *.md set filetype=markdown
 augroup END
 " }}}
 
@@ -357,16 +364,16 @@ let g:tagbar_autofocus = 1
 let g:tagbar_autoclose = 1
 let g:tagbar_sort      = 0
 " nnoremap <silent> <leader>tl :Tagbar<CR>
-nnoremap <silent> <F2> :Tagbar<CR>
+nnoremap <silent> <leader>tr :Tagbar<CR>
 " }}}
 
 " ListToggles settings {{{
-let g:lt_location_list_toggle_map = '<F3>'
-let g:lt_quickfix_list_toggle_map = '<F4>'
+let g:lt_location_list_toggle_map = '<leader>tl'
+let g:lt_quickfix_list_toggle_map = '<leader>tq'
 " }}}
 
 " Gundo Settings {{{
-nnoremap <F5> :GundoToggle<CR>
+nnoremap <leader>tg :GundoToggle<CR>
 let g:gundo_width=80
 " }}}
 
@@ -383,8 +390,8 @@ set statusline+=%{ObsessionStatus()}
 "let g:syntastic_check_on_open            = 1
 "let g:syntastic_check_on_wq              = 0
 
-let g:syntastic_error_symbol = '✗'
-let g:syntastic_warning_symbol = '⚠'
+" let g:syntastic_error_symbol = '✗'
+" let g:syntastic_warning_symbol = '⚠'
 "let g:syntastic_error_symbol   = '☠'
 ""let g:syntastic_error_symbol   = '☢'
 "let g:syntastic_warning_symbol = '⚠'
