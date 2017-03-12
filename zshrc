@@ -79,7 +79,7 @@ alias -s bz2='tar -xjvf'
 plugins=(
     colored-man-pages colorize compleat vi-mode     # Productivity
     git vagrant                                     # Build tools
-    npm                                             # Node.js
+    npm vundle                                            # Node.js
     pip                                             # Python
     brew osx                                        # MacOS
 )

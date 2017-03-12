@@ -62,14 +62,23 @@ snippet itd "Description item" b
 endsnippet
 
 # Listings
-
-snippet lst "lstlisting" b
+snippet lsto "lstlisting" b
 \begin{lstlisting}[${1}]
 ${0}
 \end{lstlisting}
 endsnippet
 
+snippet lst "lstlisting" b
+\begin{lstlisting}
+${0}
+\end{lstlisting}
+endsnippet
+
 snippet lsti "lstinline"
+\lstinline!${2}!${0}
+endsnippet
+
+snippet lstio "lstinline"
 \lstinline[${1}]!${2}!${0}
 endsnippet
 
