@@ -115,4 +115,4 @@ export EDITOR='vim'
 
 #[[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
 
-export HOMEBREW_GITHUB_API_TOKEN="3ba4a12d41f77ca4e70e0acdde310a13548510a1"
+source ~/.tokens
