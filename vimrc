@@ -50,6 +50,8 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-obsession'
 Plugin 'Valloric/ListToggle'
 Plugin 'kshenoy/vim-signature'
+Plugin 'rizzatti/dash.vim'
+Plugin 'LanguageTool'
 
 call vundle#end()            " required
 filetype plugin indent on     " required
@@ -97,4 +99,5 @@ source $HOME/.vim/conf.d/plugin_commentary.vim
 " Other Plugins {{{
 source $HOME/.vim/conf.d/plugin_obsession.vim
 source $HOME/.vim/conf.d/plugin_list_toggles.vim
+source $HOME/.vim/conf.d/plugin_languagetool.vim
 " }}}

@@ -2,6 +2,10 @@
 let mapleader=" "
 let maplocalleader = "-"
 
+" Go to home and end using capitalized directions
+noremap H ^
+noremap L $
+
 " this makes vim's regex engine "not stupid"
 " " see :h magic
 nnoremap / /\v
@@ -42,6 +46,10 @@ nnoremap <silent> [q :cprevious<CR>
 nnoremap <silent> [Q :cfirst<CR>
 nnoremap <silent> ]q :cnext<CR>
 nnoremap <silent> ]Q :clast<CR>
+nnoremap <silent> [l :lprevious<CR>
+nnoremap <silent> [L :lfirst<CR>
+nnoremap <silent> ]l :lnext<CR>
+nnoremap <silent> ]L :llast<CR>
 
 " The alt (option) key on macs now behaves like the 'meta' key. This means we
 " can now use <m-x> or similar as maps. This is buffer local, and it can easily

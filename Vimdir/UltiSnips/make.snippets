@@ -1,0 +1,17 @@
+snippet latex_skeleton "Description" b
+DEPLOYDIR = /Users/ES/Desktop
+PRODUCT = $0
+
+CMD = latexmk -xelatex
+CLEAN = latexmk -xelatex -C
+
+deploy: main.pdf
+	cp main.pdf $(DEPLOYDIR)/$(PRODUCT).pdf
+
+main.pdf: *.tex
+	${CMD} main.tex
+	# ${CMD} -c main.tex
+
+clean:
+	${CLEAN} *.tex
+endsnippet

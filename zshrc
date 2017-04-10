@@ -1,6 +1,5 @@
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
-export ZSH_CUSTOM=$HOME/.zsh_customization
 
 export TSHome='ACAD\suoeryu@ecs.fullerton.edu:~'
 
@@ -19,7 +18,7 @@ alias cls='clear'
 alias ll='ls -l'
 alias la='ls -a'
 alias rm='rmtrash'
-alias vi='mvim -g --remote-tab'
+# alias vi='mvim -g --remote-tab'
 alias javac="javac -J-Dfile.encoding=utf8"
 alias grep="grep --color=auto"
 alias tm="tmux attach -t Base || tmux new -s Base"
@@ -38,6 +37,8 @@ alias -s gz='tar -xzvf'
 alias -s tgz='tar -xzvf'
 alias -s zip='unzip'
 alias -s bz2='tar -xjvf'
+alias -s mp4='mpv'
+alias -s avi='mpv'
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
 
@@ -71,18 +72,22 @@ alias -s bz2='tar -xjvf'
 
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
+ZSH_CUSTOM=$HOME/.zsh_customization
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 
 plugins=(
-    colored-man-pages colorize compleat vi-mode     # Productivity
+    colored-man-pages colorize vi-mode              # Productivity
     git vagrant                                     # Build tools
-    npm vundle                                            # Node.js
-    pip                                             # Python
+    npm                                             # Node.js
+    vundle
+    python pip                                             # Python
     brew osx                                        # MacOS
 )
+
+fpath=(/usr/local/share/zsh-completions $fpath)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -109,3 +114,5 @@ export EDITOR='vim'
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
 
 #[[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
+
+export HOMEBREW_GITHUB_API_TOKEN="3ba4a12d41f77ca4e70e0acdde310a13548510a1"
