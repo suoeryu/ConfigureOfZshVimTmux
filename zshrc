@@ -39,6 +39,7 @@ alias -s zip='unzip'
 alias -s bz2='tar -xjvf'
 alias -s mp4='mpv'
 alias -s avi='mpv'
+alias -s AVI='mpv'
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
 
@@ -94,7 +95,7 @@ source $ZSH/oh-my-zsh.sh
 # User configuration
 
 export PATH=/usr/local/bin:$PATH:/Library/TeX/texbin
-# export MANPATH="/usr/local/man:$MANPATH"
+export MANPATH="/usr/local/man:$MANPATH"
 # export GOPATH=~/Documents/Library/Develop/Go
 
 # You may need to manually set your language environment
