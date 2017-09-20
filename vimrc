@@ -45,6 +45,7 @@ Plugin 'Valloric/YouCompleteMe'
 Plugin 'LaTeX-Box-Team/LaTeX-Box'
 Plugin 'tpope/vim-commentary'
 Plugin 'tpope/vim-fugitive'
+Plugin 'plasticboy/vim-markdown'
 
 " Other
 Plugin 'tpope/vim-obsession'
@@ -94,6 +95,7 @@ source $HOME/.vim/conf.d/plugin_easyalign.vim
 source $HOME/.vim/conf.d/plugin_you_complet_me.vim
 source $HOME/.vim/conf.d/plugin_latex_box.vim
 source $HOME/.vim/conf.d/plugin_commentary.vim
+source $HOME/.vim/conf.d/plugin_vim_markdown.vim
 " }}}
 
 " Other Plugins {{{
