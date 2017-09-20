@@ -1,0 +1,6 @@
+[submodule "Github/oh-my-zsh"]
+	path = Github/oh-my-zsh
+	url = https://github.com/robbyrussell/oh-my-zsh.git
+[submodule "Github/Menlo_Powerline"]
+	path = Github/Menlo_Powerline
+	url = https://github.com/abertsch/Menlo-for-Powerline.git
