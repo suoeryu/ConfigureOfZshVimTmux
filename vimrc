@@ -1,105 +1,74 @@
-" Vundle settings {{{
-set nocompatible              " be iMproved, required
-filetype off                  " required
+" Install vim-plug if we don't already have it
+if empty(glob('~/.vim/autoload/plug.vim'))
+  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
 
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim/
-call vundle#begin()
-" alternatively, pass a path where Vundle should install plugins
-"call vundle#begin('~/some/path/here')
-
-" let Vundle manage Vundle, required
-Plugin 'VundleVim/Vundle.vim'
+" Specify a directory for plugins
+" - Avoid using standard Vim directory names like 'plugin'
+call plug#begin('~/.vim/plugged')
 
 " Visual Plugins
-Plugin 'altercation/vim-colors-solarized'
-Plugin 'vim-airline/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
-Plugin 'octol/vim-cpp-enhanced-highlight'
+Plug 'altercation/vim-colors-solarized'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 
 " Edit Plugins
-Plugin 'Raimondi/delimitMate'
-Plugin 'SirVer/ultisnips'
-Plugin 'honza/vim-snippets'
-Plugin 'tpope/vim-surround'
-Plugin 'tpope/vim-repeat'
+Plug 'mileszs/ack.vim'
+Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
+Plug 'Valloric/ListToggle'
+Plug 'Shougo/unite.vim'
+Plug 'majutsushi/tagbar'
+Plug 'sjl/gundo.vim'
 
-" File Operate Plugins
-Plugin 'scrooloose/nerdtree'
-Plugin 'sjl/gundo.vim'
+Plug 'Lokaltog/vim-easymotion'
+Plug 'kshenoy/vim-signature'
 
-" Move In/Between Files
-Plugin 'Lokaltog/vim-easymotion'
-Plugin 'majutsushi/tagbar'
-Plugin 'Shougo/unite.vim'
-Plugin 'mileszs/ack.vim'
+Plug 'Valloric/YouCompleteMe', { 'do': './install.py --clang-completer' }
 
-" Format
-Plugin 'Chiel92/vim-autoformat'
-Plugin 'junegunn/vim-easy-align'
-Plugin 'godlygeek/tabular'
+Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
 
-" Development Utils
-"Plugin 'scrooloose/syntastic'
-Plugin 'Valloric/YouCompleteMe'
-Plugin 'LaTeX-Box-Team/LaTeX-Box'
-Plugin 'tpope/vim-commentary'
-Plugin 'tpope/vim-fugitive'
-Plugin 'plasticboy/vim-markdown'
+Plug 'Raimondi/delimitMate'
 
-" Other
-Plugin 'tpope/vim-obsession'
-Plugin 'Valloric/ListToggle'
-Plugin 'kshenoy/vim-signature'
-Plugin 'rizzatti/dash.vim'
-Plugin 'LanguageTool'
+Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-surround' | Plug 'tpope/vim-repeat'
+Plug 'tpope/vim-fugitive' | Plug 'tpope/vim-obsession'
 
-call vundle#end()            " required
-filetype plugin indent on     " required
-" }}}
+Plug 'Chiel92/vim-autoformat'
+Plug 'junegunn/vim-easy-align'
+Plug 'godlygeek/tabular'
+
+Plug 'rizzatti/dash.vim'
+
+" Language Special
+Plug 'LaTeX-Box-Team/LaTeX-Box', { 'for': 'tex' }
+Plug 'octol/vim-cpp-enhanced-highlight', { 'for': 'cpp' }
+Plug 'plasticboy/vim-markdown', { 'for': 'markdown' }
+
+" Initialize plugin system
+call plug#end()
 
 source $HOME/.vim/conf.d/general.vim
 source $HOME/.vim/conf.d/mapping.vim
 source $HOME/.vim/conf.d/templates.vim
 
-" Visual Plugins {{{
-source $HOME/.vim/conf.d/plugin_solarized.vim
-source $HOME/.vim/conf.d/plugin_airline.vim
-source $HOME/.vim/conf.d/plugin_cpp_enhanced_highlight.vim
-" }}}
-
-" Edit Plugins {{{
-source $HOME/.vim/conf.d/plugin_delimitmate.vim
-source $HOME/.vim/conf.d/plugin_ultisnip.vim
-" }}}
-
-" File Operate Plugins {{{
-source $HOME/.vim/conf.d/plugin_nerdtree.vim
-source $HOME/.vim/conf.d/plugin_gundo.vim
-" }}}
-
-" Move in/between Files Plugins {{{
-source $HOME/.vim/conf.d/plugin_easymotion.vim
-source $HOME/.vim/conf.d/plugin_tagbar.vim
-source $HOME/.vim/conf.d/plugin_unite.vim
 source $HOME/.vim/conf.d/plugin_ack.vim
-" }}}
-
-" Format Plugins {{{
+source $HOME/.vim/conf.d/plugin_airline.vim
 source $HOME/.vim/conf.d/plugin_auto_format.vim
-source $HOME/.vim/conf.d/plugin_easyalign.vim
-" }}}
-
-" Development Plugins {{{
-"source $HOME/.vim/conf.d/plugin_syntastic.vim
-source $HOME/.vim/conf.d/plugin_you_complet_me.vim
-source $HOME/.vim/conf.d/plugin_latex_box.vim
 source $HOME/.vim/conf.d/plugin_commentary.vim
-source $HOME/.vim/conf.d/plugin_vim_markdown.vim
-" }}}
-
-" Other Plugins {{{
-source $HOME/.vim/conf.d/plugin_obsession.vim
+source $HOME/.vim/conf.d/plugin_cpp_enhanced_highlight.vim
+source $HOME/.vim/conf.d/plugin_delimitmate.vim
+source $HOME/.vim/conf.d/plugin_easyalign.vim
+source $HOME/.vim/conf.d/plugin_easymotion.vim
+source $HOME/.vim/conf.d/plugin_gundo.vim
+source $HOME/.vim/conf.d/plugin_latex_box.vim
 source $HOME/.vim/conf.d/plugin_list_toggles.vim
-source $HOME/.vim/conf.d/plugin_languagetool.vim
-" }}}
+source $HOME/.vim/conf.d/plugin_nerdtree.vim
+source $HOME/.vim/conf.d/plugin_obsession.vim
+source $HOME/.vim/conf.d/plugin_solarized.vim
+source $HOME/.vim/conf.d/plugin_tagbar.vim
+source $HOME/.vim/conf.d/plugin_ultisnip.vim
+source $HOME/.vim/conf.d/plugin_unite.vim
+source $HOME/.vim/conf.d/plugin_vim_markdown.vim
+source $HOME/.vim/conf.d/plugin_you_complet_me.vim

@@ -83,8 +83,7 @@ plugins=(
     colored-man-pages colorize vi-mode              # Productivity
     git vagrant                                     # Build tools
     npm                                             # Node.js
-    vundle
-    python pip                                             # Python
+    # python pip                                             # Python
     brew osx                                        # MacOS
 )
 

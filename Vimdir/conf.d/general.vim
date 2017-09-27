@@ -1,4 +1,5 @@
 " EDITOR SETTINGS {{{
+set nocompatible
 set timeoutlen=1000 ttimeoutlen=0
 
 set ignorecase          " case insensitive searching

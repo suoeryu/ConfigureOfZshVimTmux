@@ -35,17 +35,20 @@ noremap <leader>j <c-w>j
 nnoremap <silent> <C-l> :<C-u> nohlsearch<CR><C-l>
 
 nnoremap <silent> [a :previous<CR>
-nnoremap <silent> [A :first<CR>
 nnoremap <silent> ]a :next<CR>
+nnoremap <silent> [A :first<CR>
 nnoremap <silent> ]A :last<CR>
+
 nnoremap <silent> [b :bprevious<CR>
-nnoremap <silent> [B :bfirst<CR>
 nnoremap <silent> ]b :bnext<CR>
+nnoremap <silent> [B :bfirst<CR>
 nnoremap <silent> ]B :blast<CR>
+
 nnoremap <silent> [q :cprevious<CR>
-nnoremap <silent> [Q :cfirst<CR>
 nnoremap <silent> ]q :cnext<CR>
+nnoremap <silent> [Q :cfirst<CR>
 nnoremap <silent> ]Q :clast<CR>
+
 nnoremap <silent> [l :lprevious<CR>
 nnoremap <silent> [L :lfirst<CR>
 nnoremap <silent> ]l :lnext<CR>
