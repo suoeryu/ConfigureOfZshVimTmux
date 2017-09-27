@@ -80,11 +80,10 @@ ZSH_CUSTOM=$HOME/.zsh_customization
 # Example format: plugins=(rails git textmate ruby lighthouse)
 
 plugins=(
-    colored-man-pages colorize vi-mode              # Productivity
-    git vagrant                                     # Build tools
-    npm                                             # Node.js
-    # python pip                                             # Python
-    brew osx                                        # MacOS
+    colored-man-pages colorize vi-mode
+    osx extract z
+    git vagrant
+    brew npm
 )
 
 fpath=(/usr/local/share/zsh-completions $fpath)

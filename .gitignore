@@ -1,7 +1,6 @@
 Session.vim
 tmp/
 
-Vimdir/bundle
 Vimdir/plugged
 
 tmuxdir/plugins

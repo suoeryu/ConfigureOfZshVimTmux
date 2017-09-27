@@ -1,4 +1,8 @@
-noremap <leader>ga :Ack!<space>
+noremap <leader>ag :Ack!<space>
+if executable('ag')
+      let g:ackprg = 'ag --vimgrep'
+endif
+
 augroup Ack_confing
     " this one is which you're most likely to use?
     autocmd Filetype tex noremap <leader>gl :Ack! --tex<space>

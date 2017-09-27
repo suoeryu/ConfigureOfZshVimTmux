@@ -38,6 +38,8 @@ Plug 'tpope/vim-fugitive' | Plug 'tpope/vim-obsession'
 Plug 'Chiel92/vim-autoformat'
 Plug 'junegunn/vim-easy-align'
 Plug 'godlygeek/tabular'
+Plug 'AndrewRadev/splitjoin.vim'
+Plug 'FooSoft/vim-argwrap'
 
 Plug 'rizzatti/dash.vim'
 
@@ -45,6 +47,8 @@ Plug 'rizzatti/dash.vim'
 Plug 'LaTeX-Box-Team/LaTeX-Box', { 'for': 'tex' }
 Plug 'octol/vim-cpp-enhanced-highlight', { 'for': 'cpp' }
 Plug 'plasticboy/vim-markdown', { 'for': 'markdown' }
+Plug 'cakebaker/scss-syntax.vim', { 'for': 'css' }
+Plug 'mattn/emmet-vim', { 'for': 'html' }
 
 " Initialize plugin system
 call plug#end()
