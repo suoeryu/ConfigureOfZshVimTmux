@@ -1,5 +1,5 @@
 " Key mapping
-let g:ycm_key_invoke_completion = '<c-Space>'
+let g:ycm_key_invoke_completion = '<C-Space>'
 let g:ycm_key_list_select_completion   = ['<c-n>', '<Down>']
 let g:ycm_key_list_previous_completion = ['<c-p>', '<Up>']
 nnoremap <leader>gt :YcmCompleter GoTo<CR>

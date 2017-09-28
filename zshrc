@@ -25,9 +25,9 @@ alias tm="tmux attach -t Base || tmux new -s Base"
 
 alias sshTitanServer='ssh ACAD\\suoeryu@ecs.fullerton.edu'
 
-alias -s html=vim	# 在命令行直接输入后缀为 html 的文件名，会在 MacVim 中打开
-# alias -s rb=vim	# 在命令行直接输入 ruby 文件，会在 MacVim 中打开
-# alias -s py=vim	# 在命令行直接输入 python 文件，会用 MacVim 中打开，以下类似
+alias -s html=vim
+alias -s rb=vim
+alias -s py=vim
 alias -s js=vim
 alias -s c=vim
 alias -s java=vim
@@ -38,6 +38,7 @@ alias -s tgz='tar -xzvf'
 alias -s zip='unzip'
 alias -s bz2='tar -xjvf'
 alias -s mp4='mpv'
+alias -s MP4='mpv'
 alias -s avi='mpv'
 alias -s AVI='mpv'
 # Uncomment the following line to use case-sensitive completion.
@@ -81,16 +82,18 @@ ZSH_CUSTOM=$HOME/.zsh_customization
 
 plugins=(
     colored-man-pages colorize vi-mode
-    osx extract z
+    zsh-completions zsh-autosuggestions
+    osx extract z d
     git vagrant
     brew npm
 )
 
-fpath=(/usr/local/share/zsh-completions $fpath)
-
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
+autoload -U compinit && compinit
+
+source ~/.tokens
 
 export PATH=/usr/local/bin:$PATH:/Library/TeX/texbin
 export MANPATH="/usr/local/man:$MANPATH"
@@ -108,10 +111,3 @@ export EDITOR='vim'
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
-
-# ssh
-# export SSH_KEY_PATH="~/.ssh/dsa_id"
-
-#[[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
-
-source ~/.tokens

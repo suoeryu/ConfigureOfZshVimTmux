@@ -1,4 +1,3 @@
-" MAPPING SETTINGS {{{
 let mapleader=" "
 let maplocalleader = "-"
 
@@ -72,5 +71,3 @@ if has("gui_macvim")
     noremap <silent><m-9> :tabn 9<cr>
     noremap <silent><m-0> :tabn 10<cr>
 endif
-" }}}
-

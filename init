@@ -48,3 +48,7 @@ if [ -L ~/.tmux.conf ]; then
 fi
 ln -sv `pwd`/tmux.conf ~/.tmux.conf
 
+if [ -L ~/.latexmkrc ]; then
+    /bin/rm ~/.tmux
+fi
+ln -sv `pwd`/latexmkrc ~/.latexmkrc
