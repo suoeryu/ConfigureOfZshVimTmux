@@ -129,18 +129,9 @@ set mousemodel=popup_setpos
 set foldlevelstart=99   " all folds open by default
 " }}}
 
-" FILETYPE SETTING {{{
-augroup filetype_settings
-    autocmd!
-    autocmd BufNewFile,BufReadPost *.md set filetype=markdown
-    autocmd BufNewFile,BufReadPost *.mkd set filetype=markdown
-augroup END
-" }}}
-
 " PRE/POST PROCESS SETTINGS {{{
-augroup prepostprocess
+augroup SETTING_PREPOSTPROCESS
     autocmd!
-    " autocmd CompleteDone * pclose
     " Automatically delete trailing DOS-returns and whitespace on file open and
     " write.
     autocmd BufRead,BufWritePre,FileWritePre * silent! %s/[\r \t]\+$//
@@ -148,7 +139,7 @@ augroup END
 " }}}
 
 " FOLD METHOD SETTING {{{
-augroup eryu_foldmethod
+augroup SETTING_FOLDMETHOD
     autocmd!
     autocmd Filetype    vim    setlocal foldmethod=marker
     autocmd FileType    cpp    setlocal foldmethod=syntax

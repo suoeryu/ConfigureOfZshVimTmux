@@ -1,6 +1,6 @@
 set statusline+=%{ObsessionStatus()}
 
-augroup OBSESSIONCONFIGURE
+augroup PLUGIN_OBSESSION
         autocmd!
         autocmd VimEnter * nested
         \ if !argc() && empty(v:this_session) && filereadable('Session.vim') |

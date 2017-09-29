@@ -1,4 +1,3 @@
-" Airline settings {{{
 " let g:airline_theme = 'dark'
 let g:airline_theme = 'serene'
 " let g:airline_theme = 'tomorrow'
@@ -30,4 +29,3 @@ let g:airline_symbols.whitespace = 'Ξ'
 let g:airline#extensions#syntastic#enabled = 1
 let g:airline#extensions#tagbar#enabled    = 1
 let g:airline#extensions#bufferline#enabled = 1
-" }}}

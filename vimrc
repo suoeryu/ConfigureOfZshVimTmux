@@ -10,55 +10,60 @@ endif
 " - Avoid using standard Vim directory names like 'plugin'
 call plug#begin('~/.vim/plugged')
 
-" Visual Plugins {{{2
+" Colorschemes & Statusline {{{2
 Plug 'altercation/vim-colors-solarized'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'kshenoy/vim-signature'
 " }}}2
 
-" Navigation & finder {{{2
-Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
+" Navigation & Finder & Motion {{{2
+Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' } | Plug 'Xuyuanp/nerdtree-git-plugin', { 'on': 'NERDTreeToggle' }
 Plug 'majutsushi/tagbar'
-Plug 'Lokaltog/vim-easymotion'
-Plug 'Valloric/ListToggle'
 Plug 'Shougo/denite.nvim'
 Plug 'mileszs/ack.vim'
+Plug 'Valloric/ListToggle'
+Plug 'kshenoy/vim-signature'
+Plug 'easymotion/vim-easymotion'
 " }}}2
 
-" Edit Plugins {{{2
-Plug 'sjl/gundo.vim'
-
+" Code completion & Snippets {{{2
 Plug 'Valloric/YouCompleteMe', { 'do': './install.py --clang-completer' }
-
-Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
 Plug 'jiangmiao/auto-pairs'
-Plug 'wellle/targets.vim'
+Plug 'tpope/vim-endwise'
+Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
+" }}}2
 
+" Edit {{{2
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-commentary'
-Plug 'tpope/vim-surround' | Plug 'tpope/vim-repeat'
-Plug 'tpope/vim-fugitive' | Plug 'tpope/vim-obsession'
+Plug 'wellle/targets.vim'
+Plug 'sjl/gundo.vim'
 " }}}
 
-" Text Formatting {{{2
+" Formatting {{{2
 Plug 'Chiel92/vim-autoformat'
 Plug 'junegunn/vim-easy-align'
-Plug 'tpope/vim-endwise'
 " Plug 'godlygeek/tabular'
 Plug 'AndrewRadev/splitjoin.vim'
 Plug 'FooSoft/vim-argwrap'
 " }}}2
 
-Plug 'rizzatti/dash.vim'
-Plug 'rhysd/vim-grammarous'
-
-" Language Special {{{2
+" Language Support {{{2
 " Plug 'LaTeX-Box-Team/LaTeX-Box', { 'for': 'tex' }
 Plug 'lervag/vimtex', { 'for': 'tex' }
 Plug 'octol/vim-cpp-enhanced-highlight', { 'for': 'cpp' }
 Plug 'plasticboy/vim-markdown', { 'for': 'markdown' }
 Plug 'cakebaker/scss-syntax.vim', { 'for': 'css' }
 Plug 'mattn/emmet-vim', { 'for': 'html' }
+" }}}2
+
+" Misc {{{2
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-obsession'
+Plug 'rizzatti/dash.vim'
+Plug 'rhysd/vim-grammarous'
+Plug 'mattn/gist-vim' | Plug 'mattn/webapi-vim'
 " }}}2
 
 " Initialize plugin system
@@ -83,6 +88,7 @@ source $HOME/.vim/conf.d/plugin_cpp_enhanced_highlight.vim
 source $HOME/.vim/conf.d/plugin_denite.vim
 source $HOME/.vim/conf.d/plugin_easyalign.vim
 source $HOME/.vim/conf.d/plugin_easymotion.vim
+source $HOME/.vim/conf.d/plugin_gist.vim
 source $HOME/.vim/conf.d/plugin_gundo.vim
 source $HOME/.vim/conf.d/plugin_list_toggles.vim
 source $HOME/.vim/conf.d/plugin_nerdtree.vim

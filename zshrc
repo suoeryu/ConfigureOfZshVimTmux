@@ -85,7 +85,7 @@ plugins=(
     zsh-completions zsh-autosuggestions
     osx extract z d
     git vagrant
-    brew npm
+    brew npm pip
 )
 
 source $ZSH/oh-my-zsh.sh

@@ -1,4 +1,3 @@
-noremap <leader>ag :Ack!<space>
 if executable('ag')
       let g:ackprg = 'ag --vimgrep'
 endif
@@ -11,3 +10,5 @@ augroup Ack_confing
     autocmd Filetype make noremap <leader>al :Ack! --make<space>
     autocmd Filetype matlab noremap <leader>al :Ack! --type-set text:ext:m<space>
 augroup end
+
+noremap <leader>ag :Ack!<space>
