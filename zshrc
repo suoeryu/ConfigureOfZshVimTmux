@@ -95,8 +95,9 @@ autoload -U compinit && compinit
 
 source ~/.tokens
 
-export PATH=/usr/local/bin:$PATH:/Library/TeX/texbin
-export MANPATH="/usr/local/man:$MANPATH"
+eval `/usr/libexec/path_helper -s`
+# export PATH=/usr/local/bin:$PATH:/Library/TeX/texbin
+# export MANPATH="/usr/local/man:$MANPATH"
 # export GOPATH=~/Documents/Library/Develop/Go
 
 # You may need to manually set your language environment
@@ -111,3 +112,6 @@ export EDITOR='vim'
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
+
+eval "$(pyenv init -)"
+if which pyenv-virtualenv-init > /dev/null; then eval "$(pyenv virtualenv-init -)"; fi

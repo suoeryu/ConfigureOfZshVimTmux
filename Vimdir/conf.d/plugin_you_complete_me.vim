@@ -1,5 +1,5 @@
 "let g:ycm_global_ycm_extra_conf = '~/.ycm_extra_conf.py'
-let g:ycm_python_binary_path = '/usr/local/bin/python2'
+" let g:ycm_python_binary_path = '/usr/local/bin/python2'
 let g:ycm_autoclose_preview_window_after_completion = 0
 let g:ycm_use_ultisnips_completer = 1
 "let g:ycm_show_diagnostics_ui = 0
