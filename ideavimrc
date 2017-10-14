@@ -1,0 +1,42 @@
+set surround
+
+set incsearch
+set hlsearch
+nnoremap <silent> <C-l> :<C-u> nohlsearch<CR>
+
+noremap H 0
+noremap L $
+
+" Folding Setting {{{
+nnoremap zo :action ExpandRegion<CR>
+nnoremap zO :action ExpandRegionRecursively<CR>
+nnoremap zc :action CollapseRegion<CR>
+nnoremap zC :action CollapseRegionRecursively<CR>
+" }}}
+
+" Jump Setting {{{
+nnoremap ms :action ShowBookmarks<CR>
+nnoremap m. :action ToggleBookmark<CR>
+
+nnoremap [q :action GotoPreviousError <CR>
+nnoremap ]q :action GotoNextError<CR>
+" }}}
+
+nnoremap go :action GotoAction<CR>
+nnoremap gf :action GotoFile<CR>
+nnoremap gs :action SelectIn<CR>
+
+nnoremap <Space>gc :action GotoClass<CR>
+nnoremap <Space>gu :action ShowUsages<CR>
+nnoremap <Space>gd :action GotoDeclaration<CR>
+
+nnoremap <Space>gn :action Generate<CR>
+nnoremap <Space>gr :action Refactorings.QuickListPopupAction<CR>
+
+nnoremap <Space>s :action ShowErrorDescription<CR>
+nnoremap <Space>f :action ShowIntentionActions<CR>
+
+nnoremap <Space>r :action RunClass<CR>
+nnoremap <Space>R :action Run<CR>
+
+nnoremap -d :action DashLauncherAction<CR>

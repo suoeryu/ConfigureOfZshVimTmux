@@ -74,7 +74,7 @@ call plug#end()
 " Basic {{{2
 source $HOME/.vim/conf.d/general.vim
 source $HOME/.vim/conf.d/mapping.vim
-source $HOME/.vim/conf.d/templates.vim
+source $HOME/.vim/conf.d/filespecials.vim
 " }}}2
 " Plugins {{{2
 " source $HOME/.vim/conf.d/plugin_latex_box.vim

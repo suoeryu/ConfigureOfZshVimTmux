@@ -49,6 +49,11 @@ fi
 ln -sv `pwd`/tmux.conf ~/.tmux.conf
 
 if [ -L ~/.latexmkrc ]; then
-    /bin/rm ~/.tmux
+    /bin/rm ~/.latexmkrc
 fi
 ln -sv `pwd`/latexmkrc ~/.latexmkrc
+
+if [ -L ~/.ideavimrc ]; then
+    /bin/rm ~/.ideavimrc
+fi
+ln -sv `pwd`/ideavimrc ~/.ideavimrc

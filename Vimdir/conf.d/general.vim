@@ -55,6 +55,7 @@ set formatoptions=tcroqnj
 " DISPLAY SETTINGS {{{
 if has('gui_running')
     set guifont=Menlo\ for\ Powerline:h15
+    set lines=40 columns=120
 else
     if exists('$TMUX')
         let &t_SI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=1\x7\<Esc>\\"
@@ -127,25 +128,4 @@ set mouse=a             " enables the mouse in all modes
 set mousemodel=popup_setpos
 
 set foldlevelstart=99   " all folds open by default
-" }}}
-
-" PRE/POST PROCESS SETTINGS {{{
-augroup SETTING_PREPOSTPROCESS
-    autocmd!
-    " Automatically delete trailing DOS-returns and whitespace on file open and
-    " write.
-    autocmd BufRead,BufWritePre,FileWritePre * silent! %s/[\r \t]\+$//
-augroup END
-" }}}
-
-" FOLD METHOD SETTING {{{
-augroup SETTING_FOLDMETHOD
-    autocmd!
-    autocmd Filetype    vim    setlocal foldmethod=marker
-    autocmd FileType    cpp    setlocal foldmethod=syntax
-    autocmd FileType    python setlocal foldmethod=indent
-    autocmd BufWritePre python setlocal foldmethod=indent
-    autocmd FileType    rst setlocal foldmethod=syntax
-    autocmd BufWritePre rst setlocal foldmethod=syntax
-augroup END
 " }}}
