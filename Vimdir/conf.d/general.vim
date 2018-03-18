@@ -128,4 +128,6 @@ set mouse=a             " enables the mouse in all modes
 set mousemodel=popup_setpos
 
 set foldlevelstart=99   " all folds open by default
+
+highlight Comment cterm=italic
 " }}}

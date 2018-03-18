@@ -20,15 +20,23 @@ augroup PYTHON_SETTINGS
     autocmd BufNewFile  *.py   0r ~/.vim/templates/tlp.py
     autocmd BufWritePre python setlocal foldmethod=indent
     autocmd FileType    python setlocal foldmethod=indent
-    autocmd Filetype    python nnoremap <buffer> <F12> :exec '!python' shellescape(@%, 1)<CR>
-augroup end
+    autocmd Filetype    python nnoremap <buffer> <leader>r :exec '!python' shellescape(@%, 1)<CR>
+augroup END
 " }}}
 
 " Vim SETTINGS {{{
 augroup VIM_SETTINGS
     autocmd!
     autocmd Filetype    vim    setlocal foldmethod=marker
-augroup end
+augroup END
+" }}}
+
+" Markdown SETTINGS {{{
+augroup MARKDOWN_SETTINGS
+    autocmd!
+    autocmd BufNewFile,BufReadPost *.md set filetype=markdown
+    autocmd BufNewFile,BufReadPost *.mkd set filetype=markdown
+augroup END
 " }}}
 
 " Rst SETTINGS {{{
@@ -36,15 +44,28 @@ augroup RST_SETTINGS
     autocmd!
     autocmd FileType    rst setlocal foldmethod=syntax
     autocmd BufWritePre rst setlocal foldmethod=syntax
-augroup end
+augroup END
 " }}}
 
 " Latex Settings {{{
 augroup LATEX_SETTINGS
     autocmd!
-    " autocmd BufNewFile makefile     0r ~/.vim/templates/tlp.makefile
     " autocmd BufNewFile *.tex        0r ~/.vim/templates/tlp.tex
     autocmd BufNewFile preamble.tex 0r ~/.vim/templates/preamble.tex
     autocmd BufNewFile commands.tex 0r ~/.vim/templates/commands.tex
-augroup end
+augroup END
+" }}}
+
+" Sh SETTINGS {{{
+augroup SH_SETTINGS
+    autocmd!
+    autocmd Filetype sh nnoremap <buffer> <leader>r :exec '!sh' shellescape(@%, 1)<CR>
+augroup END
+" }}}
+
+" Dockerfile SETTINGS {{{
+augroup SH_SETTINGS
+    autocmd!
+    autocmd BufNewFile,BufReadPost Dockerfile* set filetype=Dockerfile
+augroup END
 " }}}

@@ -6,6 +6,54 @@
 	<dict>
 		<key>installed</key>
 		<dict>
+			<key>ASCII_Tables</key>
+			<dict>
+				<key>date</key>
+				<date>2017-10-19T00:31:57Z</date>
+				<key>entry</key>
+				<dict>
+					<key>aliases</key>
+					<array/>
+					<key>name</key>
+					<string>ASCII Tables</string>
+					<key>platform</key>
+					<string>cheatsheet</string>
+					<key>uniqueIdentifier</key>
+					<string>ASCII_Tables</string>
+				</dict>
+			</dict>
+			<key>Docker</key>
+			<dict>
+				<key>date</key>
+				<date>2017-10-18T00:13:29Z</date>
+				<key>entry</key>
+				<dict>
+					<key>aliases</key>
+					<array/>
+					<key>name</key>
+					<string>Docker</string>
+					<key>platform</key>
+					<string>cheatsheet</string>
+					<key>uniqueIdentifier</key>
+					<string>Docker</string>
+				</dict>
+			</dict>
+			<key>Dockerfile</key>
+			<dict>
+				<key>date</key>
+				<date>2017-10-18T00:13:30Z</date>
+				<key>entry</key>
+				<dict>
+					<key>aliases</key>
+					<array/>
+					<key>name</key>
+					<string>Dockerfile</string>
+					<key>platform</key>
+					<string>cheatsheet</string>
+					<key>uniqueIdentifier</key>
+					<string>Dockerfile</string>
+				</dict>
+			</dict>
 			<key>Git</key>
 			<dict>
 				<key>date</key>
@@ -43,6 +91,22 @@
 					<string>IntelliJ_Shortcuts</string>
 				</dict>
 			</dict>
+			<key>LLDB_Commands</key>
+			<dict>
+				<key>date</key>
+				<date>2017-10-15T06:36:31Z</date>
+				<key>entry</key>
+				<dict>
+					<key>aliases</key>
+					<array/>
+					<key>name</key>
+					<string>LLDB Commands</string>
+					<key>platform</key>
+					<string>cheatsheet</string>
+					<key>uniqueIdentifier</key>
+					<string>LLDB_Commands</string>
+				</dict>
+			</dict>
 			<key>LaTeX_Math_Symbols</key>
 			<dict>
 				<key>date</key>
@@ -75,10 +139,45 @@
 					<string>Python_Format_Strings</string>
 				</dict>
 			</dict>
+			<key>Regular_Expressions</key>
+			<dict>
+				<key>date</key>
+				<date>2018-03-17T04:00:17Z</date>
+				<key>entry</key>
+				<dict>
+					<key>aliases</key>
+					<array>
+						<string>RegEx</string>
+						<string>reg ex</string>
+					</array>
+					<key>name</key>
+					<string>Regular Expressions</string>
+					<key>platform</key>
+					<string>cheatsheet</string>
+					<key>uniqueIdentifier</key>
+					<string>Regular_Expressions</string>
+				</dict>
+			</dict>
+			<key>YAML</key>
+			<dict>
+				<key>date</key>
+				<date>2017-10-18T20:06:50Z</date>
+				<key>entry</key>
+				<dict>
+					<key>aliases</key>
+					<array/>
+					<key>name</key>
+					<string>YAML</string>
+					<key>platform</key>
+					<string>cheatsheet</string>
+					<key>uniqueIdentifier</key>
+					<string>YAML</string>
+				</dict>
+			</dict>
 			<key>tmux</key>
 			<dict>
 				<key>date</key>
-				<date>2017-10-09T05:18:08Z</date>
+				<date>2018-01-04T11:18:07Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -99,6 +198,43 @@
 		</dict>
 		<key>uninstalled</key>
 		<dict>
+			<key>Bash_Shortcuts</key>
+			<dict>
+				<key>date</key>
+				<date>2017-10-15T22:20:54Z</date>
+				<key>entry</key>
+				<dict>
+					<key>aliases</key>
+					<array>
+						<string>terminal shell bash</string>
+					</array>
+					<key>name</key>
+					<string>Bash Shortcuts</string>
+					<key>platform</key>
+					<string>cheatsheet</string>
+					<key>uniqueIdentifier</key>
+					<string>Bash_Shortcuts</string>
+				</dict>
+			</dict>
+			<key>LLDB_Chisel_Commands</key>
+			<dict>
+				<key>date</key>
+				<date>2017-10-15T06:37:23Z</date>
+				<key>entry</key>
+				<dict>
+					<key>aliases</key>
+					<array>
+						<string>LLDB Facebook Chisel</string>
+						<string>Facebook LLDB Chisel</string>
+					</array>
+					<key>name</key>
+					<string>LLDB Chisel Commands</string>
+					<key>platform</key>
+					<string>cheatsheet</string>
+					<key>uniqueIdentifier</key>
+					<string>LLDB_Chisel_Commands</string>
+				</dict>
+			</dict>
 			<key>Mac_Startup_Keys</key>
 			<dict>
 				<key>date</key>
@@ -164,6 +300,22 @@
 					<string>cheatsheet</string>
 					<key>uniqueIdentifier</key>
 					<string>VimBox</string>
+				</dict>
+			</dict>
+			<key>iPython_Notebook</key>
+			<dict>
+				<key>date</key>
+				<date>2017-10-18T20:10:02Z</date>
+				<key>entry</key>
+				<dict>
+					<key>aliases</key>
+					<array/>
+					<key>name</key>
+					<string>IPython Notebook</string>
+					<key>platform</key>
+					<string>cheatsheet</string>
+					<key>uniqueIdentifier</key>
+					<string>iPython_Notebook</string>
 				</dict>
 			</dict>
 			<key>iTerm2</key>
@@ -398,7 +550,7 @@
 			<key>Scikit</key>
 			<dict>
 				<key>date</key>
-				<date>2017-10-07T05:12:09Z</date>
+				<date>2017-11-25T21:02:31Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -415,10 +567,35 @@
 					<string>Scikit</string>
 				</dict>
 			</dict>
+			<key>Seaborn</key>
+			<dict>
+				<key>date</key>
+				<date>2018-02-27T05:43:19Z</date>
+				<key>entry</key>
+				<dict>
+					<key>aliases</key>
+					<array>
+						<string>Seaborn Python</string>
+						<string>Python visualization library</string>
+						<string>matplotlib based</string>
+						<string>sns</string>
+					</array>
+					<key>authorLinkHref</key>
+					<string>https://github.com/Kapeli/Dash-User-Contributions/tree/master/docsets/Seaborn#readme</string>
+					<key>authorLinkText</key>
+					<string>Peixian Wang and Christian Stade-Schuldt</string>
+					<key>name</key>
+					<string>Seaborn</string>
+					<key>platform</key>
+					<string>usercontribSeaborn</string>
+					<key>uniqueIdentifier</key>
+					<string>Seaborn</string>
+				</dict>
+			</dict>
 			<key>TensorFlow</key>
 			<dict>
 				<key>date</key>
-				<date>2017-10-14T20:18:04Z</date>
+				<date>2018-02-12T18:56:48Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -439,6 +616,10 @@
 		<key>uninstalled</key>
 		<dict/>
 	</dict>
+	<key>DHWebViewIsDark</key>
+	<false/>
+	<key>annotationsAreShown</key>
+	<true/>
 	<key>docsets</key>
 	<dict>
 		<key>keywords</key>
@@ -448,10 +629,30 @@
 	<dict>
 		<key>installed</key>
 		<dict>
+			<key>http://kapeli.com/feeds/Android.xml</key>
+			<dict>
+				<key>date</key>
+				<date>2017-10-23T22:06:54Z</date>
+			</dict>
+			<key>http://kapeli.com/feeds/C++.xml</key>
+			<dict>
+				<key>date</key>
+				<date>2018-03-02T07:02:46Z</date>
+			</dict>
+			<key>http://kapeli.com/feeds/Docker.xml</key>
+			<dict>
+				<key>date</key>
+				<date>2017-10-17T20:17:01Z</date>
+			</dict>
 			<key>http://kapeli.com/feeds/Flask.xml</key>
 			<dict>
 				<key>date</key>
 				<date>2017-10-13T00:26:25Z</date>
+			</dict>
+			<key>http://kapeli.com/feeds/Java_SE9.xml</key>
+			<dict>
+				<key>date</key>
+				<date>2017-11-01T00:45:50Z</date>
 			</dict>
 			<key>http://kapeli.com/feeds/MatPlotLib.xml</key>
 			<dict>
@@ -485,7 +686,13 @@
 			</dict>
 		</dict>
 		<key>uninstalled</key>
-		<dict/>
+		<dict>
+			<key>http://kapeli.com/feeds/Bash.xml</key>
+			<dict>
+				<key>date</key>
+				<date>2017-10-15T22:21:39Z</date>
+			</dict>
+		</dict>
 	</dict>
 	<key>isPinned</key>
 	<true/>
@@ -530,8 +737,10 @@
 	<true/>
 	<key>shouldShowStatusIcon</key>
 	<false/>
+	<key>shouldStartAtLogin</key>
+	<false/>
 	<key>shouldSyncBookmarks</key>
-	<true/>
+	<false/>
 	<key>shouldSyncDocsets</key>
 	<true/>
 	<key>shouldSyncGeneral</key>

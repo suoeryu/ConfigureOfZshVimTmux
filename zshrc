@@ -43,7 +43,7 @@ plugins=(
     colored-man-pages vi-mode
     zsh-completions zsh-autosuggestions
     osx extract z d
-    git vagrant
+    git vagrant docker docker-compose
     brew npm pip
 )
 
@@ -72,5 +72,6 @@ export EDITOR='vim'
 # export ARCHFLAGS="-arch x86_64"
 
 eval `/usr/libexec/path_helper -s`
-eval "$(pyenv init -)"
-if which pyenv-virtualenv-init > /dev/null; then eval "$(pyenv virtualenv-init -)"; fi
+eval $(thefuck --alias)
+# if command -v pyenv 1>/dev/null 2>&1; then eval "$(pyenv init -)"; fi
+# if which pyenv-virtualenv-init > /dev/null; then eval "$(pyenv virtualenv-init -)"; fi

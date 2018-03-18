@@ -24,6 +24,3 @@ brew install rmtrash;
 
 brew install imagemagick
 brew install mpv
-
-brew install pyenv
-brew install pyenv-virtualenv
