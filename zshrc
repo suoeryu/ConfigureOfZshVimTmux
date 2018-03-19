@@ -40,19 +40,16 @@ alias -s AVI='mpv'
 alias -s pdf='open'
 
 plugins=(
-    colored-man-pages vi-mode
-    zsh-completions zsh-autosuggestions
-    osx extract z d
+    colored-man-pages vi-mode osx extract z dotenv
     git vagrant docker docker-compose
     brew npm pip
+    zsh-completions zsh-autosuggestions zsh-syntax-highlighting
 )
 
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
 autoload -U compinit && compinit
-
-source ~/.tokens
 
 # export PATH=/usr/local/bin:$PATH:/Library/TeX/texbin
 # export MANPATH="/usr/local/man:$MANPATH"
@@ -73,5 +70,3 @@ export EDITOR='vim'
 
 eval `/usr/libexec/path_helper -s`
 eval $(thefuck --alias)
-# if command -v pyenv 1>/dev/null 2>&1; then eval "$(pyenv init -)"; fi
-# if which pyenv-virtualenv-init > /dev/null; then eval "$(pyenv virtualenv-init -)"; fi
