@@ -15,5 +15,7 @@ let g:syntastic_mode_map = {
     \"passive_filetypes": ["tex"]
 \}
 
+let g:syntastic_go_checkers=['go']
+
 nnoremap <localleader>d :SyntasticCheck<CR>
 nnoremap <localleader>s :Errors<CR>

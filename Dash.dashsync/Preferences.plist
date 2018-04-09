@@ -126,7 +126,7 @@
 			<key>Python_Format_Strings</key>
 			<dict>
 				<key>date</key>
-				<date>2017-10-10T07:14:10Z</date>
+				<date>2018-03-23T03:15:39Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -612,6 +612,26 @@
 					<string>TensorFlow</string>
 				</dict>
 			</dict>
+			<key>Zsh</key>
+			<dict>
+				<key>date</key>
+				<date>2018-03-20T08:09:51Z</date>
+				<key>entry</key>
+				<dict>
+					<key>aliases</key>
+					<array/>
+					<key>authorLinkHref</key>
+					<string>https://github.com/Kapeli/Dash-User-Contributions/tree/master/docsets/Zsh#readme</string>
+					<key>authorLinkText</key>
+					<string>Zhiming Wang</string>
+					<key>name</key>
+					<string>Zsh</string>
+					<key>platform</key>
+					<string>usercontribZsh</string>
+					<key>uniqueIdentifier</key>
+					<string>Zsh</string>
+				</dict>
+			</dict>
 		</dict>
 		<key>uninstalled</key>
 		<dict/>
@@ -649,10 +669,20 @@
 				<key>date</key>
 				<date>2017-10-13T00:26:25Z</date>
 			</dict>
+			<key>http://kapeli.com/feeds/Go.xml</key>
+			<dict>
+				<key>date</key>
+				<date>2018-03-25T04:20:04Z</date>
+			</dict>
 			<key>http://kapeli.com/feeds/Java_SE9.xml</key>
 			<dict>
 				<key>date</key>
 				<date>2017-11-01T00:45:50Z</date>
+			</dict>
+			<key>http://kapeli.com/feeds/Man_Pages.xml</key>
+			<dict>
+				<key>date</key>
+				<date>2018-03-20T08:08:26Z</date>
 			</dict>
 			<key>http://kapeli.com/feeds/MatPlotLib.xml</key>
 			<dict>

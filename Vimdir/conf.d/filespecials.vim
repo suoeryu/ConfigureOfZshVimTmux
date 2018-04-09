@@ -14,6 +14,18 @@ augroup C_CPP_SETTINGS
 augroup END
 " }}}
 
+" GO SETTINGS {{{
+augroup GO_SETTINGS
+    autocmd!
+    autocmd FileType go setlocal noexpandtab
+    autocmd Filetype go nnoremap <buffer> <leader>r :GoRun<CR>
+    autocmd Filetype go nnoremap <buffer> <leader>b :GoBuild<CR>
+    autocmd Filetype go nnoremap <buffer> <leader>ck :GoErrCheck<CR>
+    autocmd Filetype go nnoremap <buffer> <leader>ts :GoTest<CR>
+    autocmd Filetype go nnoremap <buffer> <leader>i :GoImport<Space>
+augroup END
+" }}}
+
 " Python SETTINGS {{{
 augroup PYTHON_SETTINGS
     autocmd!
@@ -34,7 +46,7 @@ augroup END
 " Markdown SETTINGS {{{
 augroup MARKDOWN_SETTINGS
     autocmd!
-    autocmd BufNewFile,BufReadPost *.md set filetype=markdown
+    autocmd BufNewFile,BufReadPost *.md  set filetype=markdown
     autocmd BufNewFile,BufReadPost *.mkd set filetype=markdown
 augroup END
 " }}}
@@ -64,8 +76,15 @@ augroup END
 " }}}
 
 " Dockerfile SETTINGS {{{
-augroup SH_SETTINGS
+augroup DOCKERFILE_SETTINGS
     autocmd!
     autocmd BufNewFile,BufReadPost Dockerfile* set filetype=Dockerfile
+augroup END
+" }}}
+
+" Dotenv SETTINGS {{{
+augroup _SETTINGS
+    autocmd!
+    autocmd BufNewFile .env 0r ~/.vim/templates/tlp.env
 augroup END
 " }}}

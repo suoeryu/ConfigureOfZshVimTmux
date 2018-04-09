@@ -18,8 +18,8 @@ Plug 'vim-airline/vim-airline-themes'
 
 " Navigation & Finder & Motion {{{2
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' } | Plug 'Xuyuanp/nerdtree-git-plugin', { 'on': 'NERDTreeToggle' }
-Plug 'majutsushi/tagbar'
 Plug 'ctrlpvim/ctrlp.vim'
+Plug 'majutsushi/tagbar'
 Plug 'mileszs/ack.vim'
 Plug 'Valloric/ListToggle'
 Plug 'kshenoy/vim-signature'
@@ -27,7 +27,7 @@ Plug 'easymotion/vim-easymotion'
 " }}}2
 
 " Code completion & Snippets {{{2
-Plug 'Valloric/YouCompleteMe', { 'do': './install.py --clang-completer' }
+Plug 'Valloric/YouCompleteMe', { 'do': './install.py --clang-completer --go-completer' }
 Plug 'jiangmiao/auto-pairs'
 Plug 'tpope/vim-endwise'
 Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
@@ -57,14 +57,16 @@ Plug 'octol/vim-cpp-enhanced-highlight', { 'for': 'cpp' }
 Plug 'plasticboy/vim-markdown', { 'for': 'markdown' }
 Plug 'cakebaker/scss-syntax.vim', { 'for': 'css' }
 Plug 'mattn/emmet-vim', { 'for': 'html' }
+Plug 'fatih/vim-go', { 'for': 'go' }
 " Plug 'pearofducks/ansible-vim', { 'do': 'cd ./UltiSnips; python2 generate.py' }
 " }}}2
 
 " Misc {{{2
+Plug 'xolox/vim-notes' | Plug 'xolox/vim-misc'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-obsession'
 Plug 'rizzatti/dash.vim'
-Plug 'mattn/gist-vim' | Plug 'mattn/webapi-vim'
+" Plug 'mattn/gist-vim' | Plug 'mattn/webapi-vim'
 " }}}2
 
 " Initialize plugin system
@@ -88,7 +90,7 @@ source $HOME/.vim/conf.d/plugin_cpp_enhanced_highlight.vim
 source $HOME/.vim/conf.d/plugin_ctrlp.vim
 source $HOME/.vim/conf.d/plugin_easyalign.vim
 source $HOME/.vim/conf.d/plugin_easymotion.vim
-source $HOME/.vim/conf.d/plugin_gist.vim
+" source $HOME/.vim/conf.d/plugin_gist.vim
 source $HOME/.vim/conf.d/plugin_gundo.vim
 source $HOME/.vim/conf.d/plugin_list_toggles.vim
 source $HOME/.vim/conf.d/plugin_nerd_commenter.vim
@@ -98,6 +100,7 @@ source $HOME/.vim/conf.d/plugin_syntastic.vim
 source $HOME/.vim/conf.d/plugin_tagbar.vim
 source $HOME/.vim/conf.d/plugin_ultisnip.vim
 source $HOME/.vim/conf.d/plugin_vim_markdown.vim
+source $HOME/.vim/conf.d/plugin_vim_notes.vim
 source $HOME/.vim/conf.d/plugin_vimtex.vim
 source $HOME/.vim/conf.d/plugin_you_complete_me.vim
 " }}}2

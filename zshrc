@@ -21,8 +21,8 @@ alias tm="tmux attach -t Base || tmux new -s Base"
 alias sshTitanServer='ssh ACAD\\suoeryu@ecs.fullerton.edu'
 
 alias -s html=vim
-alias -s rb=vim
-alias -s py=vim
+# alias -s rb=vim
+# alias -s py=vim
 alias -s js=vim
 alias -s c=vim
 alias -s java=vim
@@ -41,7 +41,7 @@ alias -s pdf='open'
 
 plugins=(
     colored-man-pages vi-mode osx extract z dotenv
-    git vagrant docker docker-compose
+    git vagrant docker docker-compose golang
     brew npm pip
     zsh-completions zsh-autosuggestions zsh-syntax-highlighting
 )
@@ -53,7 +53,7 @@ autoload -U compinit && compinit
 
 # export PATH=/usr/local/bin:$PATH:/Library/TeX/texbin
 # export MANPATH="/usr/local/man:$MANPATH"
-# export GOPATH=~/Documents/Library/Develop/Go
+export GOPATH=~/.go
 
 # You may need to manually set your language environment
 export LANG=en_US.UTF-8

@@ -24,3 +24,5 @@ brew install rmtrash;
 
 brew install imagemagick
 brew install mpv
+
+brew install go gotag
