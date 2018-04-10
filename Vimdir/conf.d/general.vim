@@ -34,6 +34,7 @@ set history=1000        " remember more commands and search history
 set undolevels=1000     " use many levels of undo
 
 set autoread            " auto read when a file is changed from the outside
+set autowrite           " auto write when call `make`
 
 set swapfile
 set dir=~/.vimbackups

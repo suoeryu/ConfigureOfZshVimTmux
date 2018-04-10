@@ -83,8 +83,16 @@ augroup END
 " }}}
 
 " Dotenv SETTINGS {{{
-augroup _SETTINGS
+augroup DOTENV_SETTINGS
     autocmd!
     autocmd BufNewFile .env 0r ~/.vim/templates/tlp.env
+augroup END
+" }}}
+
+" Vimwiki SETTINGS {{{
+augroup VIMWIKI_SETTINGS
+    autocmd!
+    autocmd Filetype  vimwiki nmap <buffer> -- <Plug>VimwikiRemoveHeaderLevel
+    autocmd BufNewFile *.wiki execute "normal! i= " . split(expand("%:t"),'\.')[0] . " =\<esc>"
 augroup END
 " }}}

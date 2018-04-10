@@ -8,6 +8,8 @@ let g:syntastic_warning_symbol       = '⚠'
 let g:syntastic_style_error_symbol   = '✗'
 let g:syntastic_style_warning_symbol = '✗'
 
+let g:syntastic_always_populate_loc_list = 1
+
 let g:syntastic_filetype_map = {"plaintex": "tex"}
 let g:syntastic_mode_map = {
     \"mode": "active",

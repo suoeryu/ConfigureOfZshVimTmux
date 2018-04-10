@@ -40,10 +40,11 @@ alias -s AVI='mpv'
 alias -s pdf='open'
 
 plugins=(
-    colored-man-pages vi-mode osx extract z dotenv
-    git vagrant docker docker-compose golang
-    brew npm pip
+    vi-mode osx z dotenv
     zsh-completions zsh-autosuggestions zsh-syntax-highlighting
+    git colored-man-pages web-search
+    vagrant docker docker-compose
+    brew npm pip golang
 )
 
 source $ZSH/oh-my-zsh.sh

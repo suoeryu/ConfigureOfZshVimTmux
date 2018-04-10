@@ -62,7 +62,7 @@ Plug 'fatih/vim-go', { 'for': 'go' }
 " }}}2
 
 " Misc {{{2
-Plug 'xolox/vim-notes' | Plug 'xolox/vim-misc'
+Plug 'vimwiki/vimwiki'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-obsession'
 Plug 'rizzatti/dash.vim'
@@ -99,8 +99,9 @@ source $HOME/.vim/conf.d/plugin_obsession.vim
 source $HOME/.vim/conf.d/plugin_syntastic.vim
 source $HOME/.vim/conf.d/plugin_tagbar.vim
 source $HOME/.vim/conf.d/plugin_ultisnip.vim
+source $HOME/.vim/conf.d/plugin_vim_go.vim
 source $HOME/.vim/conf.d/plugin_vim_markdown.vim
-source $HOME/.vim/conf.d/plugin_vim_notes.vim
+source $HOME/.vim/conf.d/plugin_vim_wiki.vim
 source $HOME/.vim/conf.d/plugin_vimtex.vim
 source $HOME/.vim/conf.d/plugin_you_complete_me.vim
 " }}}2
