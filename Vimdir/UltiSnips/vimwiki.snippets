@@ -1,7 +1,11 @@
 priority 0
 
-snippet em
+snippet ita
 _$1_$0
+endsnippet
+
+snippet bf
+*$1*$0
 endsnippet
 
 snippet -- "Split"
@@ -19,25 +23,14 @@ $0
 }}}
 endsnippet
 
-snippet fm "Formula"
-\{\{\$
-\begin\{align\}
-$1
-\end\{align\}
-\}\}\$
+snippet go "Golong Block"
+{{{go
 $0
+}}}
 endsnippet
 
-snippet os "\overset{}{}"
-\overset\{${1:over}\}\{$2\}$0
-endsnippet
-
-snippet us "\overset{}{}"
-\underset\{${1:under}\}\{$2\}$0
-endsnippet
-
-snippet env "Array"
-\begin\{${1:array}\}{$2}
+snippet sh "Shell Block"
+{{{go
 $0
-\end\{$1\}
+}}}
 endsnippet

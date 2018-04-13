@@ -18,11 +18,13 @@ augroup END
 augroup GO_SETTINGS
     autocmd!
     autocmd FileType go setlocal noexpandtab
-    autocmd Filetype go nnoremap <buffer> <leader>r :GoRun<CR>
-    autocmd Filetype go nnoremap <buffer> <leader>b :GoBuild<CR>
+    autocmd Filetype go nnoremap <buffer> <leader>at :GoAlternate<CR>
+    autocmd Filetype go nnoremap <buffer> <leader>b  :GoBuild<CR>
     autocmd Filetype go nnoremap <buffer> <leader>ck :GoErrCheck<CR>
+    autocmd Filetype go nnoremap <buffer> <leader>i  :GoImport<Space>
+    autocmd Filetype go nnoremap <buffer> <leader>r  :GoRun<CR>
     autocmd Filetype go nnoremap <buffer> <leader>ts :GoTest<CR>
-    autocmd Filetype go nnoremap <buffer> <leader>i :GoImport<Space>
+    autocmd Filetype go nnoremap <buffer> <leader>tf :GoTestFunc<CR>
 augroup END
 " }}}
 
@@ -93,6 +95,6 @@ augroup END
 augroup VIMWIKI_SETTINGS
     autocmd!
     autocmd Filetype  vimwiki nmap <buffer> -- <Plug>VimwikiRemoveHeaderLevel
-    autocmd BufNewFile *.wiki execute "normal! i= " . split(expand("%:t"),'\.')[0] . " =\<esc>"
+    autocmd BufNewFile *.wiki execute "normal! i= " . substitute(expand("%:t"), ".wiki", "", "") . " =\<esc>"
 augroup END
 " }}}

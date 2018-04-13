@@ -18,6 +18,7 @@ bres install ctags;
 # brew install ack
 brew install the_silver_searcher;
 brew install vim --with-lua --with-python3 --with-override-system-vi
+brew install gnu-sed
 
 brew install rename
 brew install rmtrash;

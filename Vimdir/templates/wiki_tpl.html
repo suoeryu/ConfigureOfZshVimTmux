@@ -4,10 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <title>%title%</title>
-    <link rel="Stylesheet" type="text/css" href="%root_path%templates/style.css" />
+    <link rel="Stylesheet" type="text/css" href="%root_path%style.css" />
     <script type="text/javascript" src="%root_path%bower_components/jquery/dist/jquery.min.js"></script>
 
-    <link rel="stylesheet" type="text/css" href="%root_path%bower_components/code-prettify/loader/skins/desert.css">
+    <link rel="stylesheet" type="text/css" href="%root_path%bower_components/code-prettify/loader/prettify.css"/>
     <script type="text/javascript" src="%root_path%bower_components/code-prettify/loader/prettify.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 </head>
@@ -16,10 +16,15 @@
     <script type="text/javascript">
         $(document).ready(function() {
             $('pre').each(function(i, e) {
-                var langStr = e.attributes[0].name
-                var classStr = "prettyprint lang-" + langStr
-                $(e).removeAttr(langStr)
-                $(e).addClass(classStr)
+                if ($(e.attributes).length > 0) {
+                    var langStr = e.attributes[0].name
+                    var classStr = "prettyprint lang-" + langStr
+                    $(e).removeAttr(langStr)
+                    $(e).addClass(classStr)
+                } else {
+                    $(e).addClass("prettyprint")
+                }
+                console.log($(e.attributes).length)
             })
             PR.prettyPrint()
         })
