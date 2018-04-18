@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>%title%</title>
+    <link rel="Stylesheet" type="text/css" href="%root_path%style.css" />
+    <script type="text/javascript" src="%root_path%bower_components/jquery/dist/jquery.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="%root_path%bower_components/code-prettify/loader/prettify.css"/>
+    <script type="text/javascript" src="%root_path%bower_components/code-prettify/loader/prettify.js"></script>
+</head>
+
+<body>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('pre').each(function(i, e) {
+                if ($(e.attributes).length > 0) {
+                    var langStr = e.attributes[0].name
+                    var classStr = "prettyprint lang-" + langStr
+                    $(e).removeAttr(langStr)
+                    $(e).addClass(classStr)
+                } else {
+                    $(e).addClass("prettyprint")
+                }
+                console.log($(e.attributes).length)
+            })
+            PR.prettyPrint()
+        })
+        $(document).ready(function() {
+            $("h2,h3,h4,h5,h6").each(function(i, item) {
+                var tag = $(item).get(0).localName;
+                $(item).attr("id", "wow" + i);
+                $("#category").append(
+                    '<a class="new' + tag + '" ' + 'href="#wow' + i + '">' + $(this).text() + '</><br/>'
+                );
+                $(".newh2").css("margin-left", 0);
+                $(".newh3").css("margin-left", 20);
+                $(".newh4").css("margin-left", 40);
+                $(".newh5").css("margin-left", 60);
+                $(".newh6").css("margin-left", 80);
+            });
+        });
+    </script>
+    <nav> <a href="%root_path%index.html">Index</a> </nav>
+    <div id="category"></div>
+    <div class="content"> %content% </div>
+    <footer> </footer>
+</body>
+
+</html>

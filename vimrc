@@ -35,6 +35,7 @@ Plug 'vim-syntastic/syntastic'
 " }}}2
 
 " Edit {{{2
+Plug 'terryma/vim-multiple-cursors'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat'
 Plug 'scrooloose/nerdcommenter'
@@ -94,6 +95,7 @@ source $HOME/.vim/conf.d/plugin_easymotion.vim
 source $HOME/.vim/conf.d/plugin_gundo.vim
 source $HOME/.vim/conf.d/plugin_list_toggles.vim
 source $HOME/.vim/conf.d/plugin_nerd_commenter.vim
+source $HOME/.vim/conf.d/plugin_multiple_cursors.vim
 source $HOME/.vim/conf.d/plugin_nerdtree.vim
 source $HOME/.vim/conf.d/plugin_obsession.vim
 source $HOME/.vim/conf.d/plugin_syntastic.vim

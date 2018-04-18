@@ -42,7 +42,7 @@ alias -s pdf='open'
 plugins=(
     vi-mode osx z dotenv
     zsh-completions zsh-autosuggestions zsh-syntax-highlighting
-    git colored-man-pages web-search
+    git colored-man-pages
     vagrant docker docker-compose
     brew npm pip golang
 )

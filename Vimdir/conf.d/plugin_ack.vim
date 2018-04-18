@@ -9,8 +9,9 @@ if executable('ag')
         autocmd Filetype tex      noremap <leader>al :Ack! --tex<space>
         autocmd Filetype text     noremap <leader>al :Ack! -G '\.txt$'<space>
         autocmd Filetype vim      noremap <leader>al :Ack! --vim<space>
-        autocmd filetype cpp      noremap <leader>al :ack! --cpp<space>
-        autocmd filetype go       noremap <leader>al :ack! --go<space>
+        autocmd filetype cpp      noremap <leader>al :Ack! --cpp<space>
+        autocmd filetype go       noremap <leader>al :Ack! --go<space>
+        autocmd Filetype vimwiki  noremap <leader>al :Ack! -G '\.wiki$'<space>
     augroup end
 else
     augroup Ack_confing

@@ -56,7 +56,8 @@ set formatoptions=tcroqnj
 " DISPLAY SETTINGS {{{
 if has('gui_running')
     set guifont=Menlo\ for\ Powerline:h15
-    set lines=40 columns=120
+    set lines=42 columns=120
+    set macmeta
 else
     if exists('$TMUX')
         let &t_SI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=1\x7\<Esc>\\"
