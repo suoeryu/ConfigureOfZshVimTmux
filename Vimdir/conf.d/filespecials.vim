@@ -3,6 +3,8 @@ augroup GENERAL_SETTINGS
     autocmd!
     autocmd BufRead,BufWritePre,FileWritePre * silent! %s/[\r \t]\+$//
     autocmd BufReadPost quickfix nnoremap <buffer> <CR> <CR>
+    autocmd CmdwinEnter * nnoremap <buffer> <CR> <CR>
+    autocmd CmdwinEnter * nnoremap <buffer> q    :quit
 augroup END
 " }}}
 

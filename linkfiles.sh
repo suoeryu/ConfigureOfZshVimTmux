@@ -58,6 +58,6 @@ if [ -L ~/.ideavimrc ]; then
 fi
 ln -sv `pwd`/ideavimrc ~/.ideavimrc
 
-tic -o $HOME/.terminfo tmux.terminfo
-tic -o $HOME/.terminfo tmux-256color.terminfo
-tic -o $HOME/.terminfo xterm-256color.terminfo
+tic -o $HOME/.terminfo terminfos/tmux.terminfo
+tic -o $HOME/.terminfo terminfos/tmux-256color.terminfo
+tic -o $HOME/.terminfo terminfos/xterm-256color.terminfo
