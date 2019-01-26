@@ -1,6 +1,6 @@
 let g:vimwiki_hl_cb_checked = 1
 let g:vimwiki_CJK_length = 1
-let g:vimwiki_list_ignore_newline = 0
+" let g:vimwiki_list_ignore_newline = 0
 let g:vimwiki_folding = 'expr'
 let g:vimwiki_html_header_numbering = 2
 let g:vimwiki_listsyms = ' ○◐●✓'

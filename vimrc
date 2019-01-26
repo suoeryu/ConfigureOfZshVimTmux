@@ -58,7 +58,7 @@ Plug 'octol/vim-cpp-enhanced-highlight', { 'for': 'cpp' }
 Plug 'plasticboy/vim-markdown', { 'for': 'markdown' }
 Plug 'cakebaker/scss-syntax.vim', { 'for': 'css' }
 Plug 'mattn/emmet-vim', { 'for': 'html' }
-Plug 'fatih/vim-go', { 'for': 'go' }
+Plug 'fatih/vim-go', { 'for': 'go', 'do': ':GoUpdateBinaries' }
 " Plug 'pearofducks/ansible-vim', { 'do': 'cd ./UltiSnips; python2 generate.py' }
 " }}}2
 
@@ -67,7 +67,7 @@ Plug 'vimwiki/vimwiki'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-obsession'
 Plug 'rizzatti/dash.vim'
-" Plug 'mattn/gist-vim' | Plug 'mattn/webapi-vim'
+Plug 'tmux-plugins/vim-tmux-focus-events'
 " }}}2
 
 " Initialize plugin system

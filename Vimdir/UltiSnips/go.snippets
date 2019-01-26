@@ -3,3 +3,21 @@ priority 0
 snippet map "Map type"
 map[${1:keytype}]${2:valtype}
 endsnippet
+
+snippet testpair
+type $1TestPair struct {
+	${2:input} ${3:[]int}
+	expect ${4:int}
+}
+
+func Test${5:$1}(t *testing.T) {
+	testPairs := []$1TestPair{
+		$1TestPair{$6},
+	}
+	for _, v := range testPairs {
+		if out := ${7:$1}(v.$2$0); out != v.expect {
+			t.Errorf("%v: expect %v got %v", v.$2, v.expect, out)
+		}
+	}
+}
+endsnippet

@@ -2,9 +2,11 @@
 augroup GENERAL_SETTINGS
     autocmd!
     autocmd BufRead,BufWritePre,FileWritePre * silent! %s/[\r \t]\+$//
-    autocmd BufReadPost quickfix nnoremap <buffer> <CR> <CR>
-    autocmd CmdwinEnter * nnoremap <buffer> <CR> <CR>
-    autocmd CmdwinEnter * nnoremap <buffer> q    :quit
+    " autocmd BufReadPost quickfix nnoremap <buffer> <CR> <CR>
+    " autocmd BufReadPost location nnoremap <buffer> <CR> <CR>
+    " autocmd CmdwinEnter * nnoremap <buffer> <CR> <CR>
+    autocmd CmdwinEnter * nnoremap <buffer> q    :quit<CR>
+    autocmd FileType help noremap  <buffer> q    :quit<CR>
 augroup END
 " }}}
 
@@ -19,7 +21,7 @@ augroup END
 " AWK SETTINGS {{{
 augroup AWK_SETTINGS
     autocmd!
-    autocmd BufNewFile .awk 0r ~/.vim/templates/tpl.awk
+    autocmd BufNewFile *.awk 0r ~/.vim/templates/tpl.awk
 augroup END
 " }}}
 
@@ -36,6 +38,7 @@ augroup END
 augroup GO_SETTINGS
     autocmd!
     autocmd FileType go setlocal noexpandtab
+    autocmd FileType go setlocal foldmethod=syntax
     autocmd Filetype go nnoremap <buffer> <leader>at :GoAlternate<CR>
     autocmd Filetype go nnoremap <buffer> <leader>b  :GoBuild<CR>
     autocmd Filetype go nnoremap <buffer> <leader>ck :GoErrCheck<CR>
