@@ -27,11 +27,12 @@ Plug 'easymotion/vim-easymotion'
 " }}}2
 
 " Code completion & Snippets {{{2
-Plug 'Valloric/YouCompleteMe', { 'do': './install.py --clang-completer --go-completer' }
+Plug 'Valloric/YouCompleteMe', { 'do': './install.py --clang-completer --go-completer --ts-completer' }
 Plug 'jiangmiao/auto-pairs'
 Plug 'tpope/vim-endwise'
 Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
 Plug 'vim-syntastic/syntastic'
+Plug 'aperezdc/vim-template'
 " }}}2
 
 " Edit {{{2
@@ -103,6 +104,7 @@ source $HOME/.vim/conf.d/plugin_tagbar.vim
 source $HOME/.vim/conf.d/plugin_ultisnip.vim
 source $HOME/.vim/conf.d/plugin_vim_go.vim
 source $HOME/.vim/conf.d/plugin_vim_markdown.vim
+source $HOME/.vim/conf.d/plugin_vim_template.vim
 source $HOME/.vim/conf.d/plugin_vim_wiki.vim
 source $HOME/.vim/conf.d/plugin_vimtex.vim
 source $HOME/.vim/conf.d/plugin_you_complete_me.vim

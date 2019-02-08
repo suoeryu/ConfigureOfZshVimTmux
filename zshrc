@@ -16,8 +16,8 @@ alias rm='rmtrash'
 # alias vi='mvim -g --remote-tab'
 alias javac="javac -J-Dfile.encoding=utf8"
 alias grep="grep --color=auto"
-# alias tm="tmux attach -t Base || tmux new -s Base"
-alias tm="tmux attach -t Base"
+alias tm="tmux attach -t Base || tmux new -s Base"
+# alias tm="tmux attach -t Base"
 
 alias sshTitanServer='ssh ACAD\\suoeryu@ecs.fullerton.edu'
 
@@ -58,7 +58,7 @@ eval $(thefuck --alias)
 # export PATH=/usr/local/bin:$PATH:/Library/TeX/texbin
 # export MANPATH="/usr/local/man:$MANPATH"
 export GOPATH=~/.go
-export PATH=$PATH:$GOPATH/bin
+# export PATH=$PATH:$GOPATH/bin
 
 # You may need to manually set your language environment
 export LANG=en_US.UTF-8

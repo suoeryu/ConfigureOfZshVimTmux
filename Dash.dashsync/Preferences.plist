@@ -57,7 +57,7 @@
 			<key>Git</key>
 			<dict>
 				<key>date</key>
-				<date>2018-07-25T07:57:21Z</date>
+				<date>2019-01-26T07:10:15Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -501,7 +501,7 @@
 			<key>Keras</key>
 			<dict>
 				<key>date</key>
-				<date>2017-10-14T20:17:44Z</date>
+				<date>2019-01-26T07:10:21Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -550,7 +550,7 @@
 			<key>Scikit</key>
 			<dict>
 				<key>date</key>
-				<date>2017-11-25T21:02:31Z</date>
+				<date>2019-01-26T07:12:03Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -558,7 +558,7 @@
 					<key>authorLinkHref</key>
 					<string>https://github.com/Kapeli/Dash-User-Contributions/tree/master/docsets/Scikit#readme</string>
 					<key>authorLinkText</key>
-					<string>Aziz Alto, Josh Devlin, Christian Stade-Schuldt</string>
+					<string>Aziz Alto, Josh Devlin, Christian Stade-Schuldt, Joel Nothman</string>
 					<key>name</key>
 					<string>scikit-learn</string>
 					<key>platform</key>
@@ -615,7 +615,7 @@
 			<key>Zsh</key>
 			<dict>
 				<key>date</key>
-				<date>2018-03-20T08:09:51Z</date>
+				<date>2019-02-07T17:28:52Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -683,6 +683,11 @@
 			<dict>
 				<key>date</key>
 				<date>2018-03-20T08:08:26Z</date>
+			</dict>
+			<key>http://kapeli.com/feeds/Markdown.xml</key>
+			<dict>
+				<key>date</key>
+				<date>2019-01-26T07:09:33Z</date>
 			</dict>
 			<key>http://kapeli.com/feeds/MatPlotLib.xml</key>
 			<dict>
