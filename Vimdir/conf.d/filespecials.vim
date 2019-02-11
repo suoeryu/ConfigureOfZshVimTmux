@@ -38,6 +38,7 @@ augroup PYTHON_SETTINGS
     autocmd BufWritePre python setlocal foldmethod=indent
     autocmd FileType    python setlocal foldmethod=indent
     autocmd Filetype    python nnoremap <buffer> <leader>r :exec '!python' shellescape(@%, 1)<CR>
+    autocmd BufNewFile,BufReadPost pytest*.py nnoremap <buffer> <leader>r :!pytest <c-r>=substitute(expand('%:p'), join([getcwd(), '/'], ''), '', '')<CR>
 augroup END
 " }}}
 

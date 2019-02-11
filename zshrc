@@ -41,7 +41,7 @@ alias -s AVI='mpv'
 alias -s pdf='open'
 
 plugins=(
-    vi-mode osx z dotenv
+    vi-mode osx z dotenv jump
     zsh-completions zsh-autosuggestions zsh-syntax-highlighting
     git colored-man-pages
     vagrant docker docker-compose
@@ -54,11 +54,19 @@ source $ZSH/oh-my-zsh.sh
 autoload -U compinit && compinit
 
 eval `/usr/libexec/path_helper -s`
-eval $(thefuck --alias)
-# export PATH=/usr/local/bin:$PATH:/Library/TeX/texbin
+# eval $(thefuck --alias)
 # export MANPATH="/usr/local/man:$MANPATH"
+
+# Go Settings
 export GOPATH=~/.go
-# export PATH=$PATH:$GOPATH/bin
+export PATH=$PATH:$GOPATH/bin
+
+# pyenv settings
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+if command -v pyenv 1>/dev/null 2>&1; then
+    eval "$(pyenv init -)"
+fi
 
 # You may need to manually set your language environment
 export LANG=en_US.UTF-8
@@ -72,4 +80,3 @@ export EDITOR='vim'
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
-

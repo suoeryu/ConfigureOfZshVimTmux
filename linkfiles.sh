@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # Oh-my-zsh initial
-if [ -L ~/.zshrc ]; then
+if [[ -L ~/.zshrc ]]; then
     /bin/rm ~/.zshrc
 fi
 ln -sv `pwd`/zshrc ~/.zshrc
@@ -43,20 +43,26 @@ if [ -L ~/.tmux ]; then
 fi
 ln -sv `pwd`/tmuxdir ~/.tmux
 
-if [ -L ~/.tmux.conf ]; then
+if [[ -L ~/.tmux.conf ]]; then
     /bin/rm ~/.tmux.conf
 fi
 ln -sv `pwd`/tmux.conf ~/.tmux.conf
 
-if [ -L ~/.latexmkrc ]; then
+if [[ -L ~/.latexmkrc ]]; then
     /bin/rm ~/.latexmkrc
 fi
 ln -sv `pwd`/latexmkrc ~/.latexmkrc
 
-if [ -L ~/.ideavimrc ]; then
+if [[ -L ~/.ideavimrc ]]; then
     /bin/rm ~/.ideavimrc
 fi
 ln -sv `pwd`/ideavimrc ~/.ideavimrc
+
+if [[ -L ~/.cheat ]]; then
+    /bin/rm ~/.zshrc
+fi
+ln -sv `pwd`/cheat_user_dir ~/.cheat
+
 
 tic -o $HOME/.terminfo terminfos/tmux.terminfo
 tic -o $HOME/.terminfo terminfos/tmux-256color.terminfo

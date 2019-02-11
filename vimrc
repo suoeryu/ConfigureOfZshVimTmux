@@ -60,12 +60,14 @@ Plug 'plasticboy/vim-markdown', { 'for': 'markdown' }
 Plug 'cakebaker/scss-syntax.vim', { 'for': 'css' }
 Plug 'mattn/emmet-vim', { 'for': 'html' }
 Plug 'fatih/vim-go', { 'for': 'go', 'do': ':GoUpdateBinaries' }
+Plug 'sebdah/vim-delve', { 'for': 'go' }
 " Plug 'pearofducks/ansible-vim', { 'do': 'cd ./UltiSnips; python2 generate.py' }
 " }}}2
 
 " Misc {{{2
 Plug 'vimwiki/vimwiki'
 Plug 'tpope/vim-fugitive'
+Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-obsession'
 Plug 'rizzatti/dash.vim'
 Plug 'tmux-plugins/vim-tmux-focus-events'
