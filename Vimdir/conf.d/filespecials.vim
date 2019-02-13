@@ -111,3 +111,10 @@ augroup DOTENV_SETTINGS
     autocmd BufNewFile .env 0r ~/.vim/templates/tpl.env
 augroup END
 " }}}
+
+" YAML SETTINGS {{{
+augroup YAML_SETTINGS
+    autocmd!
+    autocmd Filetype yaml setlocal ts=2 sw=2 softtabstop=2 expandtab
+augroup END
+" }}}

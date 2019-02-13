@@ -40,10 +40,10 @@ alias -s AVI='mpv'
 alias -s pdf='open'
 
 plugins=(
-    vi-mode osx z dotenv
+    vi-mode osx z # dotenv
     zsh-completions zsh-autosuggestions zsh-syntax-highlighting
     git colored-man-pages
-    vagrant docker docker-compose
+    vagrant docker docker-compose docker-machine
     brew npm pip golang
 )
 
@@ -71,3 +71,8 @@ export EDITOR='vim'
 
 eval `/usr/libexec/path_helper -s`
 eval $(thefuck --alias)
+
+export HOMEBREW_GITHUB_API_TOKEN=787877bfb4f297ec7eeebc695939d0b117b84717
+
+source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc'
+source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc'
