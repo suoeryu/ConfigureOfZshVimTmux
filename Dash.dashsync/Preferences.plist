@@ -9,7 +9,7 @@
 			<key>ASCII_Tables</key>
 			<dict>
 				<key>date</key>
-				<date>2017-10-19T00:31:57Z</date>
+				<date>2018-07-25T07:57:23Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -25,7 +25,7 @@
 			<key>Docker</key>
 			<dict>
 				<key>date</key>
-				<date>2017-10-18T00:13:29Z</date>
+				<date>2018-07-25T07:57:22Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -41,7 +41,7 @@
 			<key>Dockerfile</key>
 			<dict>
 				<key>date</key>
-				<date>2017-10-18T00:13:30Z</date>
+				<date>2018-07-25T07:57:22Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -57,7 +57,7 @@
 			<key>Git</key>
 			<dict>
 				<key>date</key>
-				<date>2017-10-10T21:08:36Z</date>
+				<date>2019-01-26T07:10:15Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -78,7 +78,7 @@
 			<key>IntelliJ_Shortcuts</key>
 			<dict>
 				<key>date</key>
-				<date>2017-10-10T21:10:02Z</date>
+				<date>2018-07-25T07:57:21Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -94,7 +94,7 @@
 			<key>LLDB_Commands</key>
 			<dict>
 				<key>date</key>
-				<date>2017-10-15T06:36:31Z</date>
+				<date>2018-07-25T07:57:22Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -110,7 +110,7 @@
 			<key>LaTeX_Math_Symbols</key>
 			<dict>
 				<key>date</key>
-				<date>2017-10-10T21:10:51Z</date>
+				<date>2018-10-14T05:31:03Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -126,7 +126,7 @@
 			<key>Python_Format_Strings</key>
 			<dict>
 				<key>date</key>
-				<date>2018-03-23T03:15:39Z</date>
+				<date>2018-07-25T07:57:20Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -142,7 +142,7 @@
 			<key>Regular_Expressions</key>
 			<dict>
 				<key>date</key>
-				<date>2018-03-17T04:00:17Z</date>
+				<date>2018-07-25T07:57:23Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -161,7 +161,7 @@
 			<key>YAML</key>
 			<dict>
 				<key>date</key>
-				<date>2017-10-18T20:06:50Z</date>
+				<date>2018-07-25T07:57:22Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -177,7 +177,7 @@
 			<key>tmux</key>
 			<dict>
 				<key>date</key>
-				<date>2018-01-04T11:18:07Z</date>
+				<date>2018-08-10T05:26:35Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -501,7 +501,7 @@
 			<key>Keras</key>
 			<dict>
 				<key>date</key>
-				<date>2017-10-14T20:17:44Z</date>
+				<date>2019-01-26T07:10:21Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -528,7 +528,7 @@
 			<key>Pillow</key>
 			<dict>
 				<key>date</key>
-				<date>2017-10-11T00:57:59Z</date>
+				<date>2018-05-20T11:06:10Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -550,7 +550,7 @@
 			<key>Scikit</key>
 			<dict>
 				<key>date</key>
-				<date>2017-11-25T21:02:31Z</date>
+				<date>2019-01-26T07:12:03Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -558,7 +558,7 @@
 					<key>authorLinkHref</key>
 					<string>https://github.com/Kapeli/Dash-User-Contributions/tree/master/docsets/Scikit#readme</string>
 					<key>authorLinkText</key>
-					<string>Aziz Alto, Josh Devlin, Christian Stade-Schuldt</string>
+					<string>Aziz Alto, Josh Devlin, Christian Stade-Schuldt, Joel Nothman</string>
 					<key>name</key>
 					<string>scikit-learn</string>
 					<key>platform</key>
@@ -570,7 +570,7 @@
 			<key>Seaborn</key>
 			<dict>
 				<key>date</key>
-				<date>2018-02-27T05:43:19Z</date>
+				<date>2018-07-29T14:58:08Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -595,7 +595,7 @@
 			<key>TensorFlow</key>
 			<dict>
 				<key>date</key>
-				<date>2018-02-12T18:56:48Z</date>
+				<date>2018-07-25T07:57:30Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -615,7 +615,7 @@
 			<key>Zsh</key>
 			<dict>
 				<key>date</key>
-				<date>2018-03-20T08:09:51Z</date>
+				<date>2019-02-07T17:28:52Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -683,6 +683,11 @@
 			<dict>
 				<key>date</key>
 				<date>2018-03-20T08:08:26Z</date>
+			</dict>
+			<key>http://kapeli.com/feeds/Markdown.xml</key>
+			<dict>
+				<key>date</key>
+				<date>2019-01-26T07:09:33Z</date>
 			</dict>
 			<key>http://kapeli.com/feeds/MatPlotLib.xml</key>
 			<dict>

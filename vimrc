@@ -27,11 +27,12 @@ Plug 'easymotion/vim-easymotion'
 " }}}2
 
 " Code completion & Snippets {{{2
-Plug 'Valloric/YouCompleteMe', { 'do': './install.py --clang-completer --go-completer --js-completer' }
+Plug 'Valloric/YouCompleteMe', { 'do': './install.py --clang-completer --go-completer --ts-completer' }
 Plug 'jiangmiao/auto-pairs'
 Plug 'tpope/vim-endwise'
 Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
 Plug 'vim-syntastic/syntastic'
+Plug 'aperezdc/vim-template'
 " }}}2
 
 " Edit {{{2
@@ -58,16 +59,18 @@ Plug 'octol/vim-cpp-enhanced-highlight', { 'for': 'cpp' }
 Plug 'plasticboy/vim-markdown', { 'for': 'markdown' }
 Plug 'cakebaker/scss-syntax.vim', { 'for': 'css' }
 Plug 'mattn/emmet-vim', { 'for': 'html' }
-Plug 'fatih/vim-go', { 'for': 'go' }
+Plug 'fatih/vim-go', { 'for': 'go', 'do': ':GoUpdateBinaries' }
+Plug 'sebdah/vim-delve', { 'for': 'go' }
 " Plug 'pearofducks/ansible-vim', { 'do': 'cd ./UltiSnips; python2 generate.py' }
 " }}}2
 
 " Misc {{{2
 Plug 'vimwiki/vimwiki'
 Plug 'tpope/vim-fugitive'
+Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-obsession'
 Plug 'rizzatti/dash.vim'
-" Plug 'mattn/gist-vim' | Plug 'mattn/webapi-vim'
+Plug 'tmux-plugins/vim-tmux-focus-events'
 " }}}2
 
 " Initialize plugin system
@@ -103,6 +106,7 @@ source $HOME/.vim/conf.d/plugin_tagbar.vim
 source $HOME/.vim/conf.d/plugin_ultisnip.vim
 source $HOME/.vim/conf.d/plugin_vim_go.vim
 source $HOME/.vim/conf.d/plugin_vim_markdown.vim
+source $HOME/.vim/conf.d/plugin_vim_template.vim
 source $HOME/.vim/conf.d/plugin_vim_wiki.vim
 source $HOME/.vim/conf.d/plugin_vimtex.vim
 source $HOME/.vim/conf.d/plugin_you_complete_me.vim
