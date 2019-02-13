@@ -17,6 +17,7 @@ alias rm='rmtrash'
 alias javac="javac -J-Dfile.encoding=utf8"
 alias grep="grep --color=auto"
 alias tm="tmux attach -t Base || tmux new -s Base"
+# alias tm="tmux attach -t Base"
 
 alias sshTitanServer='ssh ACAD\\suoeryu@ecs.fullerton.edu'
 
@@ -40,10 +41,10 @@ alias -s AVI='mpv'
 alias -s pdf='open'
 
 plugins=(
-    vi-mode osx z # dotenv
+    vi-mode osx z dotenv jump
     zsh-completions zsh-autosuggestions zsh-syntax-highlighting
     git colored-man-pages
-    vagrant docker docker-compose docker-machine
+    vagrant docker docker-compose
     brew npm pip golang
 )
 
@@ -52,9 +53,20 @@ source $ZSH/oh-my-zsh.sh
 # User configuration
 autoload -U compinit && compinit
 
-# export PATH=/usr/local/bin:$PATH:/Library/TeX/texbin
+eval `/usr/libexec/path_helper -s`
+# eval $(thefuck --alias)
 # export MANPATH="/usr/local/man:$MANPATH"
+
+# Go Settings
 export GOPATH=~/.go
+export PATH=$PATH:$GOPATH/bin
+
+# pyenv settings
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+if command -v pyenv 1>/dev/null 2>&1; then
+    eval "$(pyenv init -)"
+fi
 
 # You may need to manually set your language environment
 export LANG=en_US.UTF-8
@@ -69,10 +81,4 @@ export EDITOR='vim'
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
-eval `/usr/libexec/path_helper -s`
-eval $(thefuck --alias)
-
 export HOMEBREW_GITHUB_API_TOKEN=787877bfb4f297ec7eeebc695939d0b117b84717
-
-source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc'
-source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc'
