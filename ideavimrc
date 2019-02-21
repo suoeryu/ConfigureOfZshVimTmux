@@ -39,4 +39,6 @@ nnoremap <Space>f :action ShowIntentionActions<CR>
 nnoremap <Space>r :action RunClass<CR>
 nnoremap <Space>R :action Run<CR>
 
-nnoremap -d :action DashLauncherAction<CR>
+nnoremap <Space><c-l> :action ReformatCode<CR>
+
+nnoremap \d :action DashLauncherAction<CR>
