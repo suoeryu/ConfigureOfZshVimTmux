@@ -17,8 +17,9 @@ Plug 'vim-airline/vim-airline-themes'
 " }}}2
 
 " Navigation & Finder & Motion {{{2
-Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' } | Plug 'Xuyuanp/nerdtree-git-plugin', { 'on': 'NERDTreeToggle' }
+" Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'ctrlpvim/ctrlp.vim'
+Plug 'junegunn/fzf'
 Plug 'majutsushi/tagbar'
 Plug 'mileszs/ack.vim'
 Plug 'Valloric/ListToggle'
@@ -27,16 +28,18 @@ Plug 'easymotion/vim-easymotion'
 " }}}2
 
 " Code completion & Snippets {{{2
-Plug 'Valloric/YouCompleteMe', { 'do': './install.py --clang-completer --go-completer --ts-completer' }
+" Plug 'Valloric/YouCompleteMe', { 'do': './install.py --clang-completer --go-completer --ts-completer' }
+Plug 'Shougo/deoplete.nvim' | Plug 'roxma/nvim-yarp' | Plug 'roxma/vim-hug-neovim-rpc'
 Plug 'jiangmiao/auto-pairs'
 Plug 'tpope/vim-endwise'
 Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
-Plug 'vim-syntastic/syntastic'
+" Plug 'vim-syntastic/syntastic'
+Plug 'w0rp/ale'
 Plug 'aperezdc/vim-template'
 " }}}2
 
 " Edit {{{2
-Plug 'terryma/vim-multiple-cursors'
+" Plug 'terryma/vim-multiple-cursors'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat'
 Plug 'scrooloose/nerdcommenter'
@@ -54,13 +57,15 @@ Plug 'FooSoft/vim-argwrap'
 
 " Language Support {{{2
 " Plug 'LaTeX-Box-Team/LaTeX-Box', { 'for': 'tex' }
-Plug 'lervag/vimtex', { 'for': 'tex' }
+" Plug 'lervag/vimtex', { 'for': 'tex' }
 Plug 'octol/vim-cpp-enhanced-highlight', { 'for': 'cpp' }
 Plug 'plasticboy/vim-markdown', { 'for': 'markdown' }
 Plug 'cakebaker/scss-syntax.vim', { 'for': 'css' }
 Plug 'mattn/emmet-vim', { 'for': 'html' }
 Plug 'fatih/vim-go', { 'for': 'go', 'do': ':GoUpdateBinaries' }
+Plug 'deoplete-plugins/deoplete-go', {'do': 'make'}
 Plug 'sebdah/vim-delve', { 'for': 'go' }
+Plug 'aklt/plantuml-syntax', { 'for': 'plantuml' }
 " Plug 'pearofducks/ansible-vim', { 'do': 'cd ./UltiSnips; python2 generate.py' }
 " }}}2
 
@@ -69,7 +74,7 @@ Plug 'vimwiki/vimwiki'
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-obsession'
-Plug 'rizzatti/dash.vim'
+" Plug 'rizzatti/dash.vim'
 Plug 'tmux-plugins/vim-tmux-focus-events'
 " }}}2
 
@@ -87,11 +92,13 @@ source $HOME/.vim/conf.d/plugin_solarized.vim
 " Plugins {{{2
 source $HOME/.vim/conf.d/plugin_ack.vim
 source $HOME/.vim/conf.d/plugin_airline.vim
+source $HOME/.vim/conf.d/plugin_ale.vim
 source $HOME/.vim/conf.d/plugin_arg_wrap.vim
 source $HOME/.vim/conf.d/plugin_auto_format.vim
 source $HOME/.vim/conf.d/plugin_auto_pairs.vim
 source $HOME/.vim/conf.d/plugin_cpp_enhanced_highlight.vim
 source $HOME/.vim/conf.d/plugin_ctrlp.vim
+source $HOME/.vim/conf.d/plugin_deoplete.vim
 source $HOME/.vim/conf.d/plugin_easyalign.vim
 source $HOME/.vim/conf.d/plugin_easymotion.vim
 " source $HOME/.vim/conf.d/plugin_gist.vim
@@ -99,16 +106,16 @@ source $HOME/.vim/conf.d/plugin_gundo.vim
 source $HOME/.vim/conf.d/plugin_list_toggles.vim
 source $HOME/.vim/conf.d/plugin_nerd_commenter.vim
 source $HOME/.vim/conf.d/plugin_multiple_cursors.vim
-source $HOME/.vim/conf.d/plugin_nerdtree.vim
+" source $HOME/.vim/conf.d/plugin_nerdtree.vim
 source $HOME/.vim/conf.d/plugin_obsession.vim
-source $HOME/.vim/conf.d/plugin_syntastic.vim
+" source $HOME/.vim/conf.d/plugin_syntastic.vim
 source $HOME/.vim/conf.d/plugin_tagbar.vim
 source $HOME/.vim/conf.d/plugin_ultisnip.vim
 source $HOME/.vim/conf.d/plugin_vim_go.vim
 source $HOME/.vim/conf.d/plugin_vim_markdown.vim
 source $HOME/.vim/conf.d/plugin_vim_template.vim
 source $HOME/.vim/conf.d/plugin_vim_wiki.vim
-source $HOME/.vim/conf.d/plugin_vimtex.vim
-source $HOME/.vim/conf.d/plugin_you_complete_me.vim
+" source $HOME/.vim/conf.d/plugin_vimtex.vim
+" source $HOME/.vim/conf.d/plugin_you_complete_me.vim
 " }}}2
 " }}}1

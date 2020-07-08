@@ -11,7 +11,7 @@ if executable('ag')
         autocmd Filetype vim      noremap <leader>al :Ack! --vim<space>
         autocmd filetype cpp      noremap <leader>al :Ack! --cpp<space>
         autocmd filetype go       noremap <leader>al :Ack! --go<space>
-        autocmd Filetype vimwiki  noremap <leader>al :Ack! -G '\.wiki$'<space>
+        autocmd Filetype vimwiki  noremap <leader>al :Ack! -G '\.wikimd$'<space>
     augroup end
 else
     augroup Ack_confing

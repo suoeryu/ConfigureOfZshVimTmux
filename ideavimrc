@@ -1,5 +1,7 @@
 set surround
 
+inoremap jk <ESC>
+
 " set incsearch
 " set hlsearch
 nnoremap <silent> <C-l> :<C-u> nohlsearch<CR>
@@ -39,4 +41,9 @@ nnoremap <Space>f :action ShowIntentionActions<CR>
 nnoremap <Space>r :action RunClass<CR>
 nnoremap <Space>R :action Run<CR>
 
-nnoremap -d :action DashLauncherAction<CR>
+nnoremap <Space><c-l> :action ReformatCode<CR>
+
+nnoremap <Space>c<Space> :action CommentByLineComment<CR>
+vnoremap <Space>c<Space> :action CommentByLineComment<CR>
+
+nnoremap \d :action DashLauncherAction<CR>

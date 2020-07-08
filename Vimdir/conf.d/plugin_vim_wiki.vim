@@ -1,3 +1,4 @@
+" https://vimawesome.com/plugin/vimwiki-the-lucky-one
 let g:vimwiki_hl_cb_checked = 1
 let g:vimwiki_CJK_length = 1
 " let g:vimwiki_list_ignore_newline = 0
@@ -22,14 +23,15 @@ let wiki.ext = '.wikimd'
 " let wiki.aut_tags = 1
 
 let leetcode_wiki = {}
-let leetcode_wiki.path = '~/Documents/Projects/LeetCode/Vimwiki'
+let leetcode_wiki.path = '~/Documents/IdeaProjects/LeetCode/wiki/'
 let leetcode_wiki.automatic_nested_syntaxes = 1
 let leetcode_wiki.syntax = 'markdown'
 let leetcode_wiki.ext = '.wikimd'
 
-" let leetcode_wiki_md = copy(wiki)
-" let leetcode_wiki_md.path = '~/Documents/Projects/LeetCode/VimwikiMD'
-" let leetcode_wiki_md.syntax = 'markdown'
-" let leetcode_wiki_md.ext = '.md'
+let note_wiki = {}
+let note_wiki.path = '~/Documents/IdeaProjects/Note/'
+let note_wiki.automatic_nested_syntaxes = 1
+let note_wiki.syntax = 'markdown'
+let note_wiki.ext = '.wikimd'
 
-let g:vimwiki_list = [wiki, leetcode_wiki]
+let g:vimwiki_list = [wiki, leetcode_wiki, note_wiki]

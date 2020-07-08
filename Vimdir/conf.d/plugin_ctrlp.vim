@@ -1,3 +1,4 @@
+" https://vimawesome.com/plugin/ctrlp-vim-everything-has-changed
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip     " MacOSX/Linux
 
 let g:ctrlp_custom_ignore = {

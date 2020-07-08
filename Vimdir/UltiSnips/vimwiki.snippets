@@ -1,7 +1,7 @@
 priority 0
 
 snippet ita
-*$1*$0
+_$1_$0
 endsnippet
 
 snippet bf
@@ -10,6 +10,10 @@ endsnippet
 
 snippet ul
 __$1__$0
+endsnippet
+
+snippet st
+~~$1~~$0
 endsnippet
 
 snippet -- "Split"
@@ -33,6 +37,12 @@ endsnippet
 
 snippet go "Golong Block"
 \`\`\`go
+$0
+\`\`\`
+endsnippet
+
+snippet py "Python Block"
+\`\`\`python
 $0
 \`\`\`
 endsnippet
@@ -65,5 +75,11 @@ snippet ruby "Ruby Block"
 \`\`\`ruby
 $0
 \`\`\`
+endsnippet
+
+snippet comment "Comment Block"
+<!--
+$0
+-->
 endsnippet
 

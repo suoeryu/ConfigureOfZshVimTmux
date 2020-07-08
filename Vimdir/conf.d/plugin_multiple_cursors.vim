@@ -1,3 +1,4 @@
+" https://vimawesome.com/plugin/vim-multiple-cursors
 let g:multi_cursor_use_default_mapping=0
 
 " Default mapping

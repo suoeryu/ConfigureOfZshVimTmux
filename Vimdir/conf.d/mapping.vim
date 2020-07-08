@@ -1,5 +1,5 @@
 let mapleader=" "
-let maplocalleader = "-"
+let maplocalleader = "\\"
 
 " Go to home and end using capitalized directions
 noremap H 0
@@ -17,6 +17,7 @@ vnoremap / /\v
 " http://vim.wikia.com/wiki/Recover_from_accidental_Ctrl-U
 inoremap <c-u> <c-g>u<c-u>
 inoremap <c-w> <c-g>u<c-w>
+inoremap jk <ESC>
 
 " Swap implementations of ` and ' jump to markers
 " By default, ' jumps to the marked line, ` jumps to the marked line and
@@ -31,6 +32,7 @@ noremap <leader>l <c-w>l
 noremap <leader>k <c-w>k
 noremap <leader>j <c-w>j
 
+nnoremap <silent> <leader>n :Ex<CR>
 nnoremap <silent> <C-l> :<C-u> nohlsearch<CR><C-l>
 
 nnoremap <silent> [a :previous<CR>
@@ -38,10 +40,10 @@ nnoremap <silent> ]a :next<CR>
 nnoremap <silent> [A :first<CR>
 nnoremap <silent> ]A :last<CR>
 
-nnoremap <silent> [b :bprevious<CR>
-nnoremap <silent> ]b :bnext<CR>
-nnoremap <silent> [B :bfirst<CR>
-nnoremap <silent> ]B :blast<CR>
+" nnoremap <silent> [b :bprevious<CR>
+" nnoremap <silent> ]b :bnext<CR>
+" nnoremap <silent> [B :bfirst<CR>
+" nnoremap <silent> ]B :blast<CR>
 
 nnoremap <silent> [q :cprevious<CR>
 nnoremap <silent> ]q :cnext<CR>
@@ -54,6 +56,8 @@ nnoremap <silent> ]l :lnext<CR>
 nnoremap <silent> ]L :llast<CR>
 
 nnoremap <leader>gf :e <cfile><cr>
+nnoremap <C-n> :silent! Explore<CR>
+
 
 " The alt (option) key on macs now behaves like the 'meta' key. This means we
 " can now use <m-x> or similar as maps. This is buffer local, and it can easily

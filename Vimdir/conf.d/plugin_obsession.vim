@@ -1,3 +1,4 @@
+" https://vimawesome.com/plugin/obsession-vim
 set statusline+=%{ObsessionStatus()}
 
 augroup PLUGIN_OBSESSION

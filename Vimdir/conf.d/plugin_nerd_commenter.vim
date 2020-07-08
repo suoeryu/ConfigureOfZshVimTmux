@@ -1,3 +1,5 @@
+" https://vimawesome.com/plugin/the-nerd-commenter
+
 " Add spaces after comment delimiters by default
 let g:NERDSpaceDelims = 1
 

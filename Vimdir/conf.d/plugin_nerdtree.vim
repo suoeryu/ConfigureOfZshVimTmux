@@ -1,3 +1,5 @@
+" https://vimawesome.com/plugin/nerdtree-red
+
 let NERDChristmasTree       = 1
 "let NERDTreeShowLineNumbers = 1
 let NERDTreeShowBookmarks   = 1

@@ -1,3 +1,4 @@
+" https://vimawesome.com/plugin/gundo
 let g:gundo_prefer_python3 = 1
 let g:gundo_width=80
 

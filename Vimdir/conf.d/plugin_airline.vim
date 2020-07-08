@@ -26,6 +26,7 @@ let g:airline_symbols.spell      = 'Ꞩ'
 let g:airline_symbols.notexists  = '∄'
 let g:airline_symbols.whitespace = 'Ξ'
 
-let g:airline#extensions#syntastic#enabled  = 1
+let g:airline#extensions#ale#enabled = 1
+" let g:airline#extensions#syntastic#enabled  = 1
 let g:airline#extensions#tagbar#enabled     = 1
 let g:airline#extensions#bufferline#enabled = 1

@@ -1,3 +1,4 @@
+" https://vimawesome.com/plugin/vim-template
 let g:templates_directory = ['~/.vim/templates']
 
 let g:templates_user_variables = [

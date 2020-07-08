@@ -1,2 +1,2 @@
-#!  /usr/local/bin/zsh
+#!/usr/bin/env bash
 

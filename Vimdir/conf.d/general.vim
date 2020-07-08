@@ -2,10 +2,19 @@
 set nocompatible
 set timeoutlen=1000 ttimeoutlen=0
 
+
+scriptencoding utf-8
+set encoding=utf-8
+set fileencoding=utf-8
+set fileencodings=utf-8,utf-16,chinese,gb18030,latin1
+
+set fileformat=unix     " file mode is unix
+set fileformats=unix,dos,mac   " detects unix, dos, mac file formats in that order
+
 set ignorecase          " case insensitive searching
 set smartcase           " but become case sensitive if you type uppercase
-" characters
 
+" characters
 set autoindent          " on new lines, match indent of previous line
 set copyindent          " copy the previous indentation on autoindenting
 set cindent             " smart indenting for c-like code
@@ -116,12 +125,6 @@ set guioptions-=M
 
 set colorcolumn=81
 
-set encoding=utf-8
-set fileencoding=utf-8
-set fileencodings=utf-8,utf-16,chinese,gb18030,latin1
-
-set fileformat=unix     " file mode is unix
-set fileformats=unix,dos,mac   " detects unix, dos, mac file formats in that order
 
 set spell spelllang=en_us,cjk
 

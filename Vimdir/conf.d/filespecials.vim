@@ -22,10 +22,10 @@ augroup GO_SETTINGS
     autocmd!
     autocmd FileType go setlocal noexpandtab
     autocmd FileType go setlocal foldmethod=syntax
+    autocmd Filetype go nnoremap <buffer> <leader>gt :GoDef<CR>
     autocmd Filetype go nnoremap <buffer> <leader>at :GoAlternate<CR>
     autocmd Filetype go nnoremap <buffer> <leader>b  :GoBuild<CR>
     autocmd Filetype go nnoremap <buffer> <leader>ck :GoErrCheck<CR>
-    autocmd Filetype go nnoremap <buffer> <leader>i  :GoImport<Space>
     autocmd Filetype go nnoremap <buffer> <leader>r  :GoRun<CR>
     autocmd Filetype go nnoremap <buffer> <leader>ts :GoTest -v<CR>
     autocmd Filetype go nnoremap <buffer> <leader>tf :GoTestFunc<CR>
@@ -52,7 +52,7 @@ augroup END
 " Vimwiki SETTINGS {{{
 augroup VIMWIKI_SETTINGS
     autocmd!
-    autocmd Filetype  vimwiki nmap <buffer> -- <Plug>VimwikiRemoveHeaderLevel
+    " autocmd Filetype  vimwiki nmap <buffer> -- <Plug>VimwikiRemoveHeaderLevel
     autocmd Filetype  vimwiki setlocal autochdir
     " autocmd BufEnter * silent! lcd %:p:h
     " autocmd BufNewFile *.wiki execute "normal! i= " . substitute(expand("%:t"), ".wiki", "", "") . " =\<esc>"
@@ -72,6 +72,13 @@ augroup RST_SETTINGS
     autocmd!
     autocmd FileType    rst setlocal foldmethod=syntax
     autocmd BufWritePre rst setlocal foldmethod=syntax
+augroup END
+" }}}
+
+" json SETTINGS {{{
+augroup JSON_SETTINGS
+    autocmd!
+    autocmd FileType    json setlocal conceallevel=0
 augroup END
 " }}}
 
