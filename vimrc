@@ -29,17 +29,14 @@ Plug 'easymotion/vim-easymotion'
 
 " Code completion & Snippets {{{2
 " Plug 'Valloric/YouCompleteMe', { 'do': './install.py --clang-completer --go-completer --ts-completer' }
-Plug 'Shougo/deoplete.nvim' | Plug 'roxma/nvim-yarp' | Plug 'roxma/vim-hug-neovim-rpc'
 Plug 'jiangmiao/auto-pairs'
 Plug 'tpope/vim-endwise'
 Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
 " Plug 'vim-syntastic/syntastic'
-Plug 'w0rp/ale'
 Plug 'aperezdc/vim-template'
 " }}}2
 
 " Edit {{{2
-" Plug 'terryma/vim-multiple-cursors'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat'
 Plug 'scrooloose/nerdcommenter'
@@ -63,7 +60,6 @@ Plug 'plasticboy/vim-markdown', { 'for': 'markdown' }
 Plug 'cakebaker/scss-syntax.vim', { 'for': 'css' }
 Plug 'mattn/emmet-vim', { 'for': 'html' }
 Plug 'fatih/vim-go', { 'for': 'go', 'do': ':GoUpdateBinaries' }
-Plug 'deoplete-plugins/deoplete-go', {'do': 'make'}
 Plug 'sebdah/vim-delve', { 'for': 'go' }
 Plug 'aklt/plantuml-syntax', { 'for': 'plantuml' }
 " Plug 'pearofducks/ansible-vim', { 'do': 'cd ./UltiSnips; python2 generate.py' }
@@ -98,7 +94,6 @@ source $HOME/.vim/conf.d/plugin_auto_format.vim
 source $HOME/.vim/conf.d/plugin_auto_pairs.vim
 source $HOME/.vim/conf.d/plugin_cpp_enhanced_highlight.vim
 source $HOME/.vim/conf.d/plugin_ctrlp.vim
-source $HOME/.vim/conf.d/plugin_deoplete.vim
 source $HOME/.vim/conf.d/plugin_easyalign.vim
 source $HOME/.vim/conf.d/plugin_easymotion.vim
 " source $HOME/.vim/conf.d/plugin_gist.vim
